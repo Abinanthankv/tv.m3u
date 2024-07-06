@@ -28,13 +28,13 @@
     {
         "name": "Chutti TV",
         "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Chutti_TV.png",
-        "group": "Tamil",
+        "group": "kids",
         "id":"557"   
     },
     {
         "name": "CNBC Tv18 Prime HD",
         "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CNBC_Tv18_Prime_HD.png",
-        "group": "Tamil",
+        "group": "English",
         "id":"143"   
     }
    
