@@ -24,6 +24,20 @@
         "id":"896",
         "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=896&e=.m3u8",
         "type":"application/x-mpegURL"
+    },
+    {
+        "name": "Chutti TV",
+        "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Chutti_TV.png",
+        "group": "Tamil",
+        "id":"557"   
+    },
+    {
+        "name": "CNBC Tv18 Prime HD",
+        "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CNBC_Tv18_Prime_HD.png",
+        "group": "Tamil",
+        "id":"143"   
     }
+   
+
 	
 ]
