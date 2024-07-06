@@ -1,8 +1,11 @@
 var player = videojs("myVideo",{
     playbackRates: [0.5, 1, 1.5, 2] // Optional playback rate options
   });
+  player.hlsQualitySelector({ displayCurrentQuality: true });
   
   const channelList = document.getElementById("channel-list");
+  const channelName = document.getElementById("channel-name");
+  const channelLogo = document.getElementById("channel-logo");
   const myVideo = document.getElementById("myVideo");
   const filterSelect = document.getElementById("channel-filter");
   
@@ -44,12 +47,16 @@ var player = videojs("myVideo",{
             `<img src="${item.logo}">`
           );
           listItem.addEventListener("click", () => {
+            channelName.textContent=item.name;
+            channelLogo.src=item.logo;
+           player.pause();
             player.src({
               src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
               type: "application/x-mpegURL",
             });
+            player.load();
             player.play();
-            player.hlsQualitySelector({ displayCurrentQuality: true });
+            
           });
           channelList.appendChild(listItem);
         }
