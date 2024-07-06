@@ -1,4 +1,30 @@
-img {
+
+  #channel-list {
+   /* flex: 0 0 20px; /* Set width of the channel list to 200px */
+   /* padding: 10px; /* Add padding to the channel list */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove margin */
+    flex: 0 0 30%; /* Set a fixed width for the channel list */
+  padding: 1rem;
+  }
+  
+  #channel-list li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5em;
+    font-style: italic;
+    /* Adjust font size as needed */
+    color: gray;
+    margin-bottom: 5px; /* Add space between list items */
+  }
+  
+  #myVideo {
+    flex: 1; /* Make the video fill the remaining space */
+    width: 400px; /* Adjust width and height as needed */
+    height: 400px;
+  }
+  img {
 
     width: 100px;
     /* Adjust width as needed */
@@ -10,30 +36,4 @@ img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-li {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 1.5em;
-    font-style: italic;
-    /* Adjust font size as needed */
-    color: gray;
-    /* Change color for sub-items */
-    margin-left: 5px;
-    margin-right: 10px;
-    /* Add spacing between main item and sub-items */
-}
-ul{
-   
-    margin: 10px;
-    background-color: white;
-    border-radius: 20px;
-    width: fit-content;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
-}
-body{
-    display: flex;
-}
 
-  
-  
