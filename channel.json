@@ -1,17 +1,29 @@
 [
     {
-        "name": "ZEE TAMIL HD",
+        "name": "Zee Tamil HD",
         "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Tamil_HD.png",
         "group": "Tamil",
-        "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1356&e=.m3u8"
+        "id":"1356",
+        "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1356&e=.m3u8",
+        "type":"application/x-mpegURL"
     
     },
 	{
         "name": "Puthiya Thalimurai",
         "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Puthiya_Thalimurai.png",
         "group": "Tamil",
-        "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=677&e=.m3u8"
+        "id":"677",
+        "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=677&e=.m3u8",
+        "type":"application/x-mpegURL"
      
+    },
+    {
+        "name": "Sun TV HD",
+        "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sun_TV_HD.png",
+        "group": "Tamil",
+        "id":"896",
+        "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=896&e=.m3u8",
+        "type":"application/x-mpegURL"
     }
 	
 ]
