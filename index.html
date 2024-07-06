@@ -6,17 +6,19 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://vjs.zencdn.net/8.12.0/video-js.css" rel="stylesheet" />
     <script src="https://vjs.zencdn.net/8.12.0/video.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@3.2.0/dist/videojs-contrib-hlsjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-quality-levels@4.1.0/dist/videojs-contrib-quality-levels.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@videojs/http-streaming@3.10.0/dist/videojs-http-streaming.min.js"></script>
   </head>
   <body>
     <ul id="channel-list" class="logo-list"></ul>
-    <video id="my-video" class="video-js" ></video>
+    <video id="myVideo" class="video-js" controls></video>
     <script>
-      var videoSrc ="https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=896&e=.m3u8";
+      var player = videojs("myVideo");
+       // Array of available quality levels
       const channelList = document.getElementById("channel-list");
-      const myVideo = document.getElementById("my-video");
-      const videoPlayer = videojs('my-video'); 
-
+      const myVideo = document.getElementById("myVideo");
       // Replace 'your_data.json' with the actual path to your JSON file
       fetch("./channel.json")
         .then((response) => response.json())
@@ -31,18 +33,12 @@
               `<img src="${item.logo}">`
             );
             listItem.addEventListener("click", () => {
-               videoSrc = `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`;
-               console.log(videoSrc);
-              if (Hls.isSupported()) {
-                var hls = new Hls();
-                hls.loadSource(videoSrc);
-                hls.attachMedia(myVideo);
+              player.src({
+                src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
+                type: "application/x-mpegURL",
+              });
+              player.play();
             
-              } else if (videoPlayer.canPlayType("application/vnd.apple.mpegurl")) {
-                videoPlayer.src = videoSrc;
-                videoPlayer.load();
-                videoPlayer.play()
-              }
             });
             channelList.appendChild(listItem);
           }
