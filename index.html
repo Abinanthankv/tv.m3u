@@ -10,6 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@3.2.0/dist/videojs-contrib-hlsjs.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-quality-levels@4.1.0/dist/videojs-contrib-quality-levels.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@videojs/http-streaming@3.10.0/dist/videojs-http-streaming.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-playbackrate/dist/videojs-contrib-playbackrate.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jb-videojs-hls-quality-selector@2.0.2/dist/videojs-hls-quality-selector.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jb-videojs-hls-quality-selector@2.0.2/dist/jb-videojs-hls-quality-selector.min.js"></script>
 </head>
@@ -20,7 +21,9 @@
   <ul id="channel-list" class="logo-list"></ul>
   <video id="myVideo" class="video-js" controls></video>
   <script>
-    var player = videojs("myVideo");
+    var player = videojs("myVideo",{
+  playbackRates: [0.5, 1, 1.5, 2] // Optional playback rate options
+});
     const channelList = document.getElementById("channel-list");
     const myVideo = document.getElementById("myVideo");
     const filterSelect = document.getElementById("channel-filter");
