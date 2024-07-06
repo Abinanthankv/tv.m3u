@@ -1,0 +1,39 @@
+img {
+
+    width: 100px;
+    /* Adjust width as needed */
+    height: 100px;
+    /* Adjust height as needed */
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5em;
+    font-style: italic;
+    /* Adjust font size as needed */
+    color: gray;
+    /* Change color for sub-items */
+    margin-left: 5px;
+    margin-right: 10px;
+    /* Add spacing between main item and sub-items */
+}
+ul{
+   
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    width: fit-content;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}
+body{
+    display: flex;
+}
+
+  
+  
