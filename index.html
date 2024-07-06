@@ -10,6 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@3.2.0/dist/videojs-contrib-hlsjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-quality-levels@4.1.0/dist/videojs-contrib-quality-levels.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@videojs/http-streaming@3.10.0/dist/videojs-http-streaming.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jb-videojs-hls-quality-selector@2.0.2/dist/videojs-hls-quality-selector.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jb-videojs-hls-quality-selector@2.0.2/dist/jb-videojs-hls-quality-selector.min.js"></script>
   </head>
   <body>
     <ul id="channel-list" class="logo-list"></ul>
@@ -38,6 +40,7 @@
                 type: "application/x-mpegURL",
               });
               player.play();
+              player.hlsQualitySelector({displayCurrentQuality: true,});
             
             });
             channelList.appendChild(listItem);
