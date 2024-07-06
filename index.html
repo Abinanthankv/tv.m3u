@@ -3,80 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <title>Data from JSON with Filter</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://vjs.zencdn.net/8.12.0/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />  <link href="https://vjs.zencdn.net/8.12.0/video-js.css" rel="stylesheet" />
   <script src="https://vjs.zencdn.net/8.12.0/video.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@3.2.0/dist/videojs-contrib-hlsjs.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-quality-levels@4.1.0/dist/videojs-contrib-quality-levels.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@videojs/http-streaming@3.10.0/dist/videojs-http-streaming.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-playbackrate/dist/videojs-contrib-playbackrate.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jb-videojs-hls-quality-selector@2.0.2/dist/videojs-hls-quality-selector.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-playbackrate@dist/videojs-contrib-playbackrate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-seek-buttons@3.0.1/dist/videojs-seek-buttons.min.js"></script>
+  <script src="path/to/videojs-contrib-buttons.min.js"></script>  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jb-videojs-hls-quality-selector@2.0.2/dist/videojs-hls-quality-selector.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jb-videojs-hls-quality-selector@2.0.2/dist/jb-videojs-hls-quality-selector.min.js"></script>
+  
 </head>
 <body>
   <select id="channel-filter">
     <option value="all">All Groups</option>
-    </select>
+  </select>
   <ul id="channel-list" class="logo-list"></ul>
   <video id="myVideo" class="video-js" controls></video>
-  <script>
-    var player = videojs("myVideo",{
-  playbackRates: [0.5, 1, 1.5, 2] // Optional playback rate options
-});
-    const channelList = document.getElementById("channel-list");
-    const myVideo = document.getElementById("myVideo");
-    const filterSelect = document.getElementById("channel-filter");
-
-    // Replace 'your_data.json' with the actual path to your JSON file
-    fetch("./channel.json")
-      .then((response) => response.json())
-      .then((data) => {
-        // Extract unique groups from your JSON data
-        const uniqueGroups = [...new Set(data.map((item) => item.group))];
-
-        // Populate the filter select element with group options
-        uniqueGroups.forEach((group) => {
-          const option = document.createElement("option");
-          option.value = group;
-          option.text = group;
-          filterSelect.appendChild(option);
-        });
-
-        filterSelect.addEventListener("change", () => {
-          const selectedGroup = filterSelect.value;
-          let filteredData;
-
-          // Filter data based on selected group
-          if (selectedGroup === "all") {
-            filteredData = data;
-          } else {
-            filteredData = data.filter((item) => item.group === selectedGroup);
-          }
-
-          // Clear existing channel list and repopulate with filtered data
-          channelList.innerHTML = "";
-          for (const item of filteredData) {
-            const logoImg = document.createElement("img");
-            const listItem = document.createElement("li");
-            logoImg.src = item.logo;
-            listItem.textContent = item.name;
-            listItem.insertAdjacentHTML(
-              "beforeend",
-              `<img src="${item.logo}">`
-            );
-            listItem.addEventListener("click", () => {
-              player.src({
-                src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
-                type: "application/x-mpegURL",
-              });
-              player.play();
-              player.hlsQualitySelector({ displayCurrentQuality: true });
-            });
-            channelList.appendChild(listItem);
-          }
-        });
-      });
-  </script>
+  <script src="script.js"></script>  
 </body>
 </html>
