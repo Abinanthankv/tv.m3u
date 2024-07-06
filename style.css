@@ -1,39 +1,53 @@
-
-  #channel-list {
-   /* flex: 0 0 20px; /* Set width of the channel list to 200px */
-   /* padding: 10px; /* Add padding to the channel list */
-    list-style: none; /* Remove default list styling */
-    margin: 0; /* Remove margin */
-    flex: 0 0 30%; /* Set a fixed width for the channel list */
-  padding: 1rem;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
-  #channel-list li {
+  /* Filter Section */
+  #channel-filter {
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  /* Channel List Section */
+  #channel-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+  }
+  .logo-list img{
+    width: 90px;
+    height: 90px;
+  }
+  
+  /* Video Player Section */
+  #myVideo {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  #channel-logo{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 90px;
+    height: 90px;
+
+  }
+  #channel-info{
+    font-size: 14px;
+    padding: auto;
+    background-color: bisque;
     display: flex;
     align-items: center;
-    list-style: none;
-    font-size: 1.5em;
-    font-style: italic;
-    /* Adjust font size as needed */
-    color: gray;
-    margin-bottom: 5px; /* Add space between list items */
   }
+ 
+
   
-  #myVideo {
-    flex: 1; /* Make the video fill the remaining space */
-    width: 400px; /* Adjust width and height as needed */
-    height: 400px;
-  }
-  img {
-
-    width: 100px;
-    /* Adjust width as needed */
-    height: 100px;
-    /* Adjust height as needed */
-    margin: 10px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
