@@ -186,6 +186,36 @@
           "name": "News 18 Tamilnadu",
           "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/News_18_Tamilnadu.png",
           "group": "News"
+        },
+        {
+          "id": "1984",
+          "name": "Sports18 1 HD",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_1_HD.png",
+          "group":"Sports"
+        },
+        {
+          "id": "1985",
+          "name": "Sports18 1",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_1_SD.png",
+          "group":"Sports"
+        },
+        {
+          "id": "1998",
+          "name": "Sports18 Khel",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_Khel.png",
+         "group":"Sports"
+        },
+        {
+          "id": "2852",
+          "name": "Sports18 2",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_2.png",
+          "group":"Sports"
+        },
+        {
+          "id": "2853",
+          "name": "Sports18 3",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sports18_3.png",
+         "group":"Sports"
         }
 
       ]
