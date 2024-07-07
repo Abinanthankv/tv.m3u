@@ -3,7 +3,8 @@
       "name": "Zee Tamil HD",
       "id": "1356",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Tamil_HD.png",
-      "group": "Tamil"
+      "group": "Tamil",
+      "epgid":"Zee.Tamil.HD.in"
     },
     {
       "name": "Puthiya Thalimurai",
@@ -82,6 +83,7 @@
           "id": "143",
           "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CNBC_Tv18_Prime_HD.png",
           "group": "News"
+
         },
         {
           "name": "Pogo Tamil",
@@ -94,7 +96,98 @@
           "id": "557",
           "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Chutti_TV.png",
           "group": "Kids"
+        },
+        {
+          "id": "1319",
+          "name": "Zee Cafe HD",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Cafe_HD.png",
+          "group": "Movies"
+        },
+        {
+          "id": "1226",
+          "name": "Nick HD+",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Nick_HD_Plus.png",
+          "group":"Kids"
+        },
+        {
+          "id": "1371",
+          "name": "Colors Tamil",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Colors_Tamil.png",
+          "group":"Tamil"
+        },
+        {
+          "id": "579",
+          "name": "History TV18 HD Tamil",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/History_18_Tamil.png",
+          "group":"Tamil"
+        },
+        {
+          "id": "550",
+          "name": "Discovery Kids Tamil",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Discovery_Kids_Tamil.png",
+          "group":"Kids"
+        },
+        {
+          "id": "568",
+          "name": "Discovery Science",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Discovery_Science.png",
+          "group":"English"
+        },
+        {
+          "id": "569",
+          "name": "D Tamil",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Discovery_Channel_Tamil.png",
+          "group": "Tamil"
+        },
+        {
+          "id": "676",
+          "name": "Sun News",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sun_News.png",
+          "group": "News"
+        },
+        {
+          "id": "705",
+          "name": "Polimer TV",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Polimer_TV.png",
+          "group":"Tamil"
+        },
+        {
+          "id": "496",
+          "name": "dw",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/dw.png",
+          "group":"News"
+        },
+        {
+          "id": "567",
+          "name": "Animal Planet English",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Animal_Planet_English.png",
+          "group":"English"
+        },
+        {
+          "id": "286",
+          "name": "Animal Planet HD World",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Animal_Planet_HD.png",
+          "group": "English"
+        },
+        {
+          "id": "494",
+          "name": "AL Jazeera",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/AL_Jazeera.png",
+          "group":"News"
+        },
+        {
+          "id": "579",
+          "name": "History TV18 HD Tamil",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/History_18_Tamil.png",
+          "group": "Tamil"
+        },
+        {
+          "id": "615",
+          "name": "News 18 Tamilnadu",
+          "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/News_18_Tamilnadu.png",
+          "group": "News"
         }
+
       ]
       
    
