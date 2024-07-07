@@ -2,7 +2,6 @@ var player = videojs("myVideo", {
   playbackRates: [0.5, 1, 1.5, 2], // Optional playback rate options
 });
 player.hlsQualitySelector({ displayCurrentQuality: true });
-
 const channelList = document.getElementById("channel-list");
 const channelName = document.getElementById("channel-name");
 const channelLogo = document.getElementById("channel-logo");
