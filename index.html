@@ -16,18 +16,22 @@
   
 </head>
 <body>
-  <select id="channel-filter">
-    <option value="all">All Groups</option>
-  </select>
   <div id="video-container">
     <video id="myVideo" class="video-js" controls></video>
-    <div id="channel-info">
-      <img id="channel-logo" src="" alt="Channel Logo" />
-      <span id="channel-name"></span>
-    </div>
+   
   </div>
+  <div id="channel-info">
+    <img id="channel-logo" src="" alt="Channel Logo" />
+    <span id="channel-name"></span>
+    
+  </div>
+  <div id="current-playing"></div>
   <div id="channel-container">
+    <select id="channel-filter">
+      <option value="all">All Groups</option>
+    </select>
     <ul id="channel-list" class="logo-list"></ul>
+   
   </div>
   <script src="script.js"></script>  
 </body>
