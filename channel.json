@@ -3,97 +3,97 @@
       "name": "Zee Tamil HD",
       "id": "1356",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Tamil_HD.png",
-      "group": "WioTV"
+      "group": "Tamil"
     },
     {
       "name": "Puthiya Thalimurai",
       "id": "677",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Puthiya_Thalimurai.png",
-      "group": "WioTV"
+      "group": "News"
     },
     {
       "name": "Sun TV HD",
       "id": "896",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sun_TV_HD.png",
-      "group": "WioTV"
+      "group": "Tamil"
     },
     {
       "name": "KTV HD",
       "id": "894",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/KTV_HD.png",
-      "group_title": "WioTV"
+      "group": "Movies"
     },
     {
       "name": "News7 Tamil",
       "id": "673",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/News7_Tamil.png",
-      "group_title": "WioTV"
+      "group": "News"
     },
     {
       "name": "Zee Thirai",
       "id": "2256",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Thirai.png",
-      "group_title": "WioTV"
+      "group": "Movies"
     },
     {
       "name": "Sun Music HD",
       "id": "895",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sun_Music_HD.png",
-      "group_title": "WioTV"
+      "group": "Music"
     },
     {
       "name": "Polimer News",
       "id": "636",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Polimer_News.png",
-      "group_title": "WioTV"
+      "group": "News"
     },
     {
       "name": "Cartoon Network Tamil",
       "id": "817",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Cartoon_Network_Tamil.png",
-      "group_title": "WioTV"
+      "group": "Kids"
     },
     {
       "name": "Puthu Yugam",
       "id": "824",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Puthu_Yugam.png",
-      "group_title": "WioTV"
+      "group": "Tamil"
     },
     {
       "name": "Thanthi TV",
       "id": "830",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Thanthi_TV.png",
-      "group_title": "WioTV"
+      "group": "News"
     },
     {
       "name": "CN HD+ Tamil",
       "id": "1081",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CN_HD_Tamil.png",
-      "group_title": "WioTV"
+      "group": "Kids"
     },
     {
       "name": "Animal Planet HD Tamil",
       "id": "1219",
       "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Animal_Planet_HD_Tamil.png",
-      "group_title": "WioTV"
+      "group": "Tamil"
     },
         {
           "name": "CNBC Tv18 Prime HD",
           "id": "143",
           "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CNBC_Tv18_Prime_HD.png",
-          "group": "WioTV"
+          "group": "News"
         },
         {
           "name": "Pogo Tamil",
           "id": "542",
           "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Pogo_Tamil.png",
-          "group": "WioTV"
+          "group": "Kids"
         },
         {
           "name": "Chutti TV",
           "id": "557",
           "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Chutti_TV.png",
-          "group": "WioTV"
+          "group": "Kids"
         }
       ]
       
