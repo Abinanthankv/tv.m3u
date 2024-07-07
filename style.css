@@ -1,3 +1,33 @@
+@media screen and (max-width: 768px) {
+  /* Adjust layout for mobile devices */
+
+  /* Video container */
+  #video-container {
+    width: 100%;
+  }
+
+  /* Channel info and channel container */
+  #channel-info,
+  #channel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Channel filter */
+  #channel-filter {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Channel list */
+  #channel-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+  }
+}
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
