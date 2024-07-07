@@ -65,7 +65,7 @@ fetch("./channel.json")
    var  currentPlayingPrograminfo="" // Initialize variable to store current program
     const currentPlaying = document.getElementById("current-playing");
     const currentPlayinginfo = document.getElementById("current-playing-info");
-    var currentTime = getTimeshiftedCurrentTime(20500);
+    var currentTime = getTimeshiftedCurrentTime(19800);
     currentPlaying.innerHTML=""
     currentPlayinginfo.innerHTML=""
      //currentPlaying.textContent= "Now Playing "
