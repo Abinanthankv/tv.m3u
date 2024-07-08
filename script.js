@@ -10,11 +10,11 @@ const myVideo = document.getElementById("myVideo");
 const filterSelect = document.getElementById("channel-filter");
 
 // Replace 'your_data.json' with the actual path to your JSON file
-fetch("./channel.json")
+fetch("./streams.json")
   .then((response) => response.json())
   .then((data) => {
     // Extract unique groups from your JSON data
-    const uniqueGroups = [...new Set(data.map((item) => item.group))];
+    const uniqueGroups = [...new Set(data.map((item) => item.category))];
 
     // Populate the filter select element with group options
     uniqueGroups.forEach((group) => {
@@ -30,7 +30,7 @@ fetch("./channel.json")
       if (selectedGroup === "all") {
         filteredData = data;
       } else {
-        filteredData = data.filter((item) => item.group === selectedGroup);
+        filteredData = data.filter((item) => item.category === selectedGroup);
       }
       // Clear existing channel list and repopulate with filtered data
       channelList.innerHTML = "";
@@ -41,19 +41,44 @@ fetch("./channel.json")
         listItem.textContent = item.name;
         listItem.insertAdjacentHTML("beforeend", `<img src="${item.logo}">`);
         listItem.addEventListener("click", () => {
-          
-           var epgid=generateEpgId(item.name);
-           var channelData = getChannelDataById(epgid);
-
+        var channelData = getChannelDataById(item.epgid);
+        var sonyid=generatesonychannel(item.name);
           channelName.textContent = item.name;
           channelLogo.src = item.logo;
-          player.pause();
-          player.src({
-            src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
-            type: "application/x-mpegURL",
+          console.log(item.id);
+          if(item.id!=null){
+            player.pause();
+            player.src({
+              src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
+              type: "application/x-mpegURL",
+            });
+            player.load();
+            player.play();
+          }
+          else{
+           
+            console.log(sonyid);
+           player.pause();
+           player.on('error', function(error) {
+            if (error.code === 4)  // Source not supported (likely no stream)
+             {            // HTTP error
+          
+              player.pause();  // Pause playback if needed
+              player.error({ code: -1, message: 'No stream found.' });  // Simulate an error with a custom message
+            } else {
+              console.error('Error:', error);  // Log other errors
+            }
           });
-          player.load();
-          player.play();
+           player.src({
+          src: `https://allinonereborn.tech/sliv/${sonyid}.m3u8`,
+          
+           type: "application/x-mpegURL",
+            });
+          
+           player.load();
+           player.play();
+          }
+         
         });
         channelList.appendChild(listItem);
       }
@@ -72,6 +97,7 @@ fetch("./channel.json")
      fetch("./prod.json")
     .then((response) => response.json())
     .then((data) => {
+      let foundCurrentProgram = false
         for (var i = 0; i < data.length; i++) {
           var channel = data[i];    
          const startTime = channel.start_time;
@@ -79,6 +105,7 @@ fetch("./channel.json")
     const title = channel.title;
     const description = channel.description;
     const channelName = channel.name;
+    //now playing data
     if (startTime < currentTime && currentTime < stopTime) {
        // Store the title of the current program
       if(channelName===channelId)
@@ -87,21 +114,21 @@ fetch("./channel.json")
       currentPlayingPrograminfo = description;
         currentPlaying.textContent= "Now Playing: "+ currentPlayingProgram;
         currentPlayinginfo.textContent= "Information->"+ currentPlayingPrograminfo ;
+        foundCurrentProgram = true; 
+      }
+      if (foundCurrentProgram) {
+        break;
       }
       // Stop iterating after finding the current program
     }
-    
         }
 
-  });
-    
-      
+  });   
   }
-  function generateEpgId(channelName) {
+  function generatesonychannel(channelName) {
     // Remove unnecessary characters and spaces for a cleaner format
-    const sanitizedName = channelName.replace(/\W/g, '.').toUpperCase();
-  
-    return `${sanitizedName}.IN`;
+    const sanitizedName = channelName.replace(/\W/g, '-').toLowerCase();
+    return sanitizedName;
   }
 
 
@@ -133,7 +160,7 @@ function getTimeshiftedCurrentTime(timeShiftSeconds) {
 
   // Combine the formatted components into the desired format (remove seconds for now)
   var formattedTime = year + month + day + hour + minute+"00";
-
+ console.log(formattedTime)
   return formattedTime;
 }
 
