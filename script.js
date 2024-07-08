@@ -1,3 +1,7 @@
+
+
+
+
 var player = videojs("myVideo", {
   playbackRates: [0.5, 1, 1.5, 2], // Optional playback rate options
 });
@@ -105,14 +109,17 @@ fetch("./streams.json")
     });
   });
   function getChannelDataById(channelId) {
-    console.log(channelId)
+  
     var currentPlayingProgram=""; 
-   var  currentPlayingPrograminfo="" // Initialize variable to store current program
+    var  currentPlayingPrograminfo="" ;// Initialize variable to store current program
+    var  nowPlayinglogosrc=""
     const currentPlaying = document.getElementById("current-playing");
     const currentPlayinginfo = document.getElementById("current-playing-info");
+    const nowPlayinglogo = document.getElementById("nowplaying-logo");
     var currentTime = getTimeshiftedCurrentTime(19800);
-    currentPlaying.innerHTML=""
-    currentPlayinginfo.innerHTML=""
+    currentPlaying.innerHTML="";
+    currentPlayinginfo.innerHTML="";
+    nowPlayinglogo.src="" ;
      //currentPlaying.textContent= "Now Playing "
      fetch("./prod.json")
     .then((response) => response.json())
@@ -125,6 +132,8 @@ fetch("./streams.json")
     const title = channel.title;
     const description = channel.description;
     const channelName = channel.name;
+    const nowplayingicon=channel.nowplayinglogo;
+   
     //now playing data
     if (startTime < currentTime && currentTime < stopTime) {
        // Store the title of the current program
@@ -132,8 +141,10 @@ fetch("./streams.json")
       {
         currentPlayingProgram = title;
       currentPlayingPrograminfo = description;
+      nowPlayinglogosrc=nowplayingicon;
         currentPlaying.textContent= "Now Playing: "+ currentPlayingProgram;
         currentPlayinginfo.textContent= "Information->"+ currentPlayingPrograminfo ;
+        nowPlayinglogo.src=nowplayingicon;
         foundCurrentProgram = true; 
       }
       if (foundCurrentProgram) {
