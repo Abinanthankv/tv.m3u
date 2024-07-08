@@ -18,13 +18,14 @@
 <body>
   <div id="video-container">
     <video id="myVideo" class="video-js" controls></video>
+    <div id="channel-info">
+      <img id="channel-logo" src="" alt="Channel Logo" />
+      <span id="channel-name"></span>
+    </div>
+    <div id="current-playing"></div>
+    <p id="current-playing-info"></p>
   </div>
-  <div id="channel-info">
-    <img id="channel-logo" src="" alt="Channel Logo" />
-    <span id="channel-name"></span>
-  </div>
-  <div id="current-playing"></div>
-  <p id="current-playing-info"></p>
+  
   <div id="channel-container">
     <select id="language-filter">
       <option value="all">All language</option>
@@ -33,9 +34,9 @@
       <option value="all">All category</option>
     </select>
     
-    
   </div>
   <ul id="channel-list" class="logo-list"></ul>
+  
   <script src="script.js"></script>  
 </body>
 </html>
