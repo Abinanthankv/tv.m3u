@@ -1,5 +1,11 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+
   /* Adjust layout for mobile devices */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
   /* Video container */
   #video-container {
@@ -13,6 +19,10 @@
     flex-direction: column;
     align-items: center;
     font-size: 80px;
+  }
+
+  #channel-name{
+    font-size: 30px;
   }
 
   /* Channel filter */
@@ -47,6 +57,13 @@ body {
   
   /* Filter Section */
   #channel-filter {
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  #language-filter {
     width: 150px;
     padding: 5px;
     margin-bottom: 10px;
@@ -99,7 +116,7 @@ body {
   #myVideo {
     width: 100%;
     /*height: 300px;*/
-    height: 75vh; 
+    height: 72vh; 
     margin: 0;
   }
 
@@ -111,8 +128,22 @@ body {
     height: 90px;
 
   }
+  #nowplaying-info{
+    display: flex;
+    align-items: center;
+    
+  }
+  #nowplaying-logo{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 90px;
+    height: 90px;
+
+  }
+
   #channel-info{
-    font-size: 14px;
+    font-size: 25px;
     padding: auto;
     background-color: bisque;
     display: flex;
@@ -129,7 +160,23 @@ body {
       padding: 0; /* Remove default padding */
     
   }
+  #current-playing,#current-playing-info{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+  }
   #channel-filter{
+    display: flex;
+  flex-wrap: wrap; /* Allow items to wrap if overflow */
+  list-style: none; /* Remove default list style */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  height:50px;
+  text-align: center;
+  border-style: dashed;
+  border-radius: 20px;
+  }
+  #language-filter{
     display: flex;
   flex-wrap: wrap; /* Allow items to wrap if overflow */
   list-style: none; /* Remove default list style */
@@ -142,6 +189,15 @@ body {
   }
 
   #channel-filter option {
+    margin: 5px; /* Add space between list items */
+    padding: 10px 15px; /* Add padding for content */
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #fff; /* White background */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 14px; /* Set font size for list items */
+  }
+  #language-filter option {
     margin: 5px; /* Add space between list items */
     padding: 10px 15px; /* Add padding for content */
     border: 1px solid #ccc; /* Add a thin border */
