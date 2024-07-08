@@ -112,14 +112,14 @@ fetch("./streams.json")
   
     var currentPlayingProgram=""; 
     var  currentPlayingPrograminfo="" ;// Initialize variable to store current program
-    var  nowPlayinglogosrc=""
+  
     const currentPlaying = document.getElementById("current-playing");
     const currentPlayinginfo = document.getElementById("current-playing-info");
-    const nowPlayinglogo = document.getElementById("nowplaying-logo");
+   
     var currentTime = getTimeshiftedCurrentTime(19800);
     currentPlaying.innerHTML="";
     currentPlayinginfo.innerHTML="";
-    nowPlayinglogo.src="" ;
+    
      //currentPlaying.textContent= "Now Playing "
      fetch("./prod.json")
     .then((response) => response.json())
@@ -132,7 +132,7 @@ fetch("./streams.json")
     const title = channel.title;
     const description = channel.description;
     const channelName = channel.name;
-    const nowplayingicon=channel.nowplayinglogo;
+    
    
     //now playing data
     if (startTime < currentTime && currentTime < stopTime) {
@@ -141,10 +141,10 @@ fetch("./streams.json")
       {
         currentPlayingProgram = title;
       currentPlayingPrograminfo = description;
-      nowPlayinglogosrc=nowplayingicon;
+     
         currentPlaying.textContent= "Now Playing: "+ currentPlayingProgram;
         currentPlayinginfo.textContent= "Information->"+ currentPlayingPrograminfo ;
-        nowPlayinglogo.src=nowplayingicon;
+        
         foundCurrentProgram = true; 
       }
       if (foundCurrentProgram) {
