@@ -129,18 +129,11 @@ body {
 
   }
   #nowplaying-info{
-    display: flex;
+   
     align-items: center;
     
   }
-  #nowplaying-logo{
-    margin: 0;
-    padding: 0;
-    border: 1px solid #ccc;
-    width: 90px;
-    height: 90px;
-
-  }
+ 
 
   #channel-info{
     font-size: 25px;
