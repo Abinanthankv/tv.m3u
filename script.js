@@ -35,27 +35,6 @@ fetch("./streams.json")
     filterCategory.parentElement.appendChild(filterLanguage);
     filterCategory.addEventListener("change", () => {
      channelList.innerHTML = "";
-      const selectedGroup = filterLanguage.value;
-      const selectedCategory = filterCategory.value;
-      let filteredData;
-      console.log("selectedCategory",selectedCategory);
-      console.log("selectedGroup",selectedGroup);
-      if (selectedGroup === "all" && selectedCategory === "all") {
-        filteredData = data;
-      } else if (selectedGroup === "all") {
-        filteredData = data.filter((item) => item.category === selectedCategory);
-      } else if (selectedCategory === "all") {
-        filteredData = data.filter((item) => item.language === selectedGroup);
-      } else {
-        filteredData = data.filter(
-          (item) => item.language === selectedGroup && item.category === selectedCategory
-        );
-      }
-      console.log("filtereddata",filteredData)
-      filterLanguage.value="all"
-      filterCategory.value=selectedCategory;
-      console.log(filterCategory)
-    
     });
     filterLanguage.addEventListener("change", () => {
       const selectedGroup = filterLanguage.value;
