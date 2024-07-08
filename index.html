@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Data from JSON with Filter</title>
+  <title>Live Tv</title>
   <link rel="stylesheet" href="style.css" />  <link href="https://vjs.zencdn.net/8.12.0/video-js.css" rel="stylesheet" />
   <script src="https://vjs.zencdn.net/8.12.0/video.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
@@ -19,11 +19,20 @@
   <div id="video-container">
     <video id="myVideo" class="video-js" controls></video>
     <div id="channel-info">
-      <img id="channel-logo" src="" alt="Channel Logo" />
+      <img id="channel-logo" src=""  />
       <span id="channel-name"></span>
     </div>
-    <div id="current-playing"></div>
-    <p id="current-playing-info"></p>
+    <div id="nowplaying-info">
+      <img id="nowplaying-logo" src="" >
+      <div>
+        <span id="current-playing"></span>
+        <p id="current-playing-info"></p>
+      </div>
+      
+   
+    
+    </div>
+    
   </div>
   
   <div id="channel-container">
