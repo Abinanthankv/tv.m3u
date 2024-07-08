@@ -12,12 +12,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 80px;
   }
 
   /* Channel filter */
   #channel-filter {
     width: 100%;
     margin-bottom: 10px;
+    font-size: 20px;
   }
 
   /* Channel list */
@@ -26,14 +28,23 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 10px;
+    font-size: 20px;
+  }
+  #channel-list ul {
+   
+    font-size: 50px;
   }
 }
+
+
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
+  
   /* Filter Section */
   #channel-filter {
     width: 150px;
@@ -42,10 +53,16 @@ body {
     border: 1px solid #ccc;
     border-radius: 3px;
   }
+  #channel-list {
+    overflow-y: scroll; /* Enable scrolling for the channel list */
+    scrollbar-width: none; /* Hide the default scrollbar (works in Chrome, Safari, and Opera) */
+    -ms-overflow-style: none; /* Hide the default scrollbar (works in Internet Explorer, Edge) */
+  }
+
   /* Channel List Section */
   #channel-list {
     
-    flex: 0 0 25%;
+    flex: 0 0 19%;
   display: flex; /* Make the list a flex container */
     flex-wrap: wrap; /* Wrap list items when necessary */
     width: fit-content; /* Adjust width as needed */
@@ -74,15 +91,16 @@ body {
     transition: all 0.2s ease-in-out; /* Add a smooth hover transition */
   }
   .logo-list img{
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
   
   /* Video Player Section */
   #myVideo {
     width: 100%;
-    height: 300px;
-    margin-top: 20px;
+    /*height: 300px;*/
+    height: 75vh; 
+    margin: 0;
   }
 
   #channel-logo{
@@ -98,12 +116,13 @@ body {
     padding: auto;
     background-color: bisque;
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
   #channel-container{
-    flex: 0 0 25%;
+   /* flex: 0 0 25%;
   /*  display: flex; /* Make the list a flex container */
-      flex-wrap: wrap; /* Wrap list items when necessary */
+   /*   flex-wrap: wrap; /* Wrap list items when necessary */
     /*  width: fit-content; /* Adjust width as needed */
       margin: 0 auto; /* Center the list horizontally */
       list-style: none; /* Remove default bullet points */
@@ -131,6 +150,32 @@ body {
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 14px; /* Set font size for list items */
   }
+  body {
+    display: flex;
+  }
+  
+
+  #video-container {
+    flex: 3;
+    position: sticky;
+    top: 0; /* Adjust top position as needed */
+    left: 0; /* Adjust left position as needed */
+    width: 50%; /* Adjust width as needed */
+    height: 100vh; /* Set height to 100% viewport height */
+    z-index: 10; /* Set a higher z-index to ensure video stays on top */
+  }
+  #channel-container {
+    /*flex: 1;*/
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  #channel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
  
 
   
