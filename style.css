@@ -1,185 +1,179 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Filter Section */
-  #channel-filter {
-    width: 150px;
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  #language-filter {
-    width: 150px;
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  #channel-list {
-    overflow-y: scroll; /* Enable scrolling for the channel list */
-    scrollbar-width: none; /* Hide the default scrollbar (works in Chrome, Safari, and Opera) */
-    -ms-overflow-style: none; /* Hide the default scrollbar (works in Internet Explorer, Edge) */
-  }
-
-  /* Channel List Section */
- 
-  #channel-list li {
-    margin: 10px; /* Add space between list items */
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: fit-content;
-    width: 120px;
-    flex-wrap: wrap;
-    text-align: center; /* Center the content of each item */
-    font-family: Arial, sans-serif; /* Set font family */
-    font-size: 16px; /* Set font size */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    background-color: #f1f1f1; /* Light gray background for list items */
-    color: black; /* Text color for list items */
-    border-radius: 5px; /* Add rounded corners for a softer look */
-    /* Add box shadow for a subtle hover effect */
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease-in-out; /* Add a smooth hover transition */
-  }
-  .logo-list img{
-    width: 100px;
-    height: 100px;
-  }
-  
-  /* Video Player Section */
-  #myVideo {
-    width: 100%;
-    /*height: 300px;*/
-    height: 72vh; 
-    margin: 0;
-  }
-
-  #channel-logo{
-    margin: 0;
-    padding: 0;
-    border: 1px solid #ccc;
-    width: 90px;
-    height: 90px;
-
-  }
-  #nowplaying-info{
-   
-    align-items: center;
-    
-  }
- 
-
-  #channel-info{
-    font-size: 25px;
-    padding: auto;
-    background-color: bisque;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  #channel-container{
-  /* flex: 0 0 25%;*/
-  display: flex; /* Make the list a flex container */
-     /* Adjust width as needed */
-     flex-direction: column;
-
-    /*  margin: 0 auto; /* Center the list horizontally */
-      list-style: none; /* Remove default bullet points */
-      padding: 0; /* Remove default padding */
-    
-  }
-  #current-playing,#current-playing-info{
-    font-size: 25px;
-    padding: 0;
-    margin: 0;
-  }
-  #channel-filter{
-    display: flex;
-  flex-wrap: wrap; /* Allow items to wrap if overflow */
-  list-style: none; /* Remove default list style */
-  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif;
+  margin: 0;
   padding: 0;
-  height:50px;
-  text-align: center;
-  border-style: dashed;
-  border-radius: 20px;
-  }
-  #language-filter{
-    display: flex;
-  flex-wrap: wrap; /* Allow items to wrap if overflow */
-  list-style: none; /* Remove default list style */
-  margin: 0; /* Remove default margin */
+}
+
+/* Filter Section */
+#channel-filter {
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#language-filter {
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#channel-list {
+  overflow-y: scroll; /* Enable scrolling for the channel list */
+  scrollbar-width: none; /* Hide the default scrollbar (works in Chrome, Safari, and Opera) */
+  -ms-overflow-style: none; /* Hide the default scrollbar (works in Internet Explorer, Edge) */
+}
+
+/* Channel List Section */
+
+#channel-list li {
+  margin: 10px; /* Add space between list items */
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+ /* align-items: center;
+  height: fit-content;*/
+  width: 170px;
+  flex-wrap: wrap;
+  text-align: center; /* Center the content of each item */
+  font-family: Arial, sans-serif; /* Set font family */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  background-color: #f1f1f1; /* Light gray background for list items */
+  color: black; /* Text color for list items */
+  border-radius: 5px; /* Add rounded corners for a softer look */
+  /* Add box shadow for a subtle hover effect */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out; /* Add a smooth hover transition */
+}
+.logo-list img{
+  width: 100px;
+  height: 100px;
+}
+
+/* Video Player Section */
+#myVideo {
+  width: 100%;
+  /*height: 300px;*/
+  height: 72vh; 
+  margin: 0;
+}
+
+#channel-logo{
+  margin: 0;
   padding: 0;
-  height:50px;
-  text-align: center;
-  border-style: dashed;
-  border-radius: 20px;
-  }
+  border: 1px solid #ccc;
+  width: 90px;
+  height: 90px;
 
-  #channel-filter option {
-    margin: 5px; /* Add space between list items */
-    padding: 10px 15px; /* Add padding for content */
-    border: 1px solid #ccc; /* Add a thin border */
-    border-radius: 5px; /* Add rounded corners */
-    background-color: #fff; /* White background */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 14px; /* Set font size for list items */
-  }
-  #language-filter option {
-    margin: 5px; /* Add space between list items */
-    padding: 10px 15px; /* Add padding for content */
-    border: 1px solid #ccc; /* Add a thin border */
-    border-radius: 5px; /* Add rounded corners */
-    background-color: #fff; /* White background */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 14px; /* Set font size for list items */
-  }
-  body {
-    display: flex;
-  }
-  
-
-  #video-container {
-    flex: 1;
-    position: sticky;
-    top: 0; /* Adjust top position as needed */
-    left: 0; /* Adjust left position as needed */
-    width: 50%; /* Adjust width as needed */
-    height: 100vh; /* Set height to 100% viewport height */
-    z-index: 10; /* Set a higher z-index to ensure video stays on top */
-  }
-  #channel-container {
-    display: flex;
-    background-color: #f0f0f0;
-    padding: 10px;
-  }
-  
-  #channel-list {
-    flex:0 0 1%;
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .channelList-active{
-    background-color: grey;
-  }
+}
+#nowplaying-info{
  
-  .vjs-control-bar{
-    height: auto;
-    font-size: 16px !important;
-  }
- 
+  align-items: center;
   
+}
 
+
+#channel-info{
+  font-size: 25px;
+  padding: auto;
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#channel-container{
+/* flex: 0 0 25%;*/
+display: flex; /* Make the list a flex container */
+   /* Adjust width as needed */
+
+
+  /*  margin: 0 auto; /* Center the list horizontally */
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
   
+}
+#current-playing,#current-playing-info{
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+#channel-filter{
+  display: flex;
+flex-wrap: wrap; /* Allow items to wrap if overflow */
+list-style: none; /* Remove default list style */
+margin: 0; /* Remove default margin */
+padding: 0;
+height:50px;
+text-align: center;
+border-style: dashed;
+border-radius: 20px;
+}
+#language-filter{
+  display: flex;
+flex-wrap: wrap; /* Allow items to wrap if overflow */
+list-style: none; /* Remove default list style */
+margin: 0; /* Remove default margin */
+padding: 0;
+height:50px;
+text-align: center;
+border-style: dashed;
+border-radius: 20px;
+}
+
+#channel-filter option {
+  margin: 5px; /* Add space between list items */
+  padding: 10px 15px; /* Add padding for content */
+  border: 1px solid #ccc; /* Add a thin border */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #fff; /* White background */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 14px; /* Set font size for list items */
+}
+#language-filter option {
+  margin: 5px; /* Add space between list items */
+  padding: 10px 15px; /* Add padding for content */
+  border: 1px solid #ccc; /* Add a thin border */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #fff; /* White background */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 14px; /* Set font size for list items */
+}
+
+
+
+#video-container {
+  
+  top: 0; /* Adjust top position as needed */
+  left: 0; /* Adjust left position as needed */
+ /* width: 50%; /* Adjust width as needed */
+  /*height: 100vh; /* Set height to 100% viewport height */
+  z-index: 10; /* Set a higher z-index to ensure video stays on top */
+}
+#channel-container {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+#channel-list {
+  flex:0 0 1%;
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.vjs-control-bar{
+  height: auto;
+  font-size: 16px !important;
+}
+
+
+
