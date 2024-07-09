@@ -163,7 +163,7 @@ body {
   }
   
   #channel-list {
-    flex:0 0 10%;
+    flex:0 0 15%;
     display: flex;
     flex-wrap: wrap;
     width: fit-content;
