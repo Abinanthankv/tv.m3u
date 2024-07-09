@@ -74,12 +74,12 @@ fetch("./streams.json")
           if (channelList.style.display==="flex") {
             channelList.style.flexWrap = "wrap";
             channelList.style.display = 'block';
-            channelList.style.flex="0 0 10%";
+             channelList.style.flex="0 0 18%";
             
             
           } else {
             channelList.style.display = 'flex';
-            channelList.style.flex="0 0 40%"
+            channelList.style.flex="0 0 30%"
             
           }
         var channelData = getChannelDataById(item.epgid);
