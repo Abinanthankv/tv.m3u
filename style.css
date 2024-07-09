@@ -75,26 +75,38 @@ body {
   align-items: center;
   
 }
-
+#video-details{
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+.upcoming-info{
+  flex:10% 10% 20px;
+  flex-wrap: wrap;
+  width: 150px;
+  
+}
 
 #channel-info{
   font-size: 25px;
   padding: auto;
   background-color: bisque;
-  display: flex;
+  
   flex-direction: row;
-  align-items: center;
+ display: flex;
+  /*align-items: center;*/
+}
+.info{
+  display: flex;
+  flex-direction: column;
 }
 #channel-container{
 /* flex: 0 0 25%;*/
 display: flex; /* Make the list a flex container */
    /* Adjust width as needed */
-
-
   /*  margin: 0 auto; /* Center the list horizontally */
     list-style: none; /* Remove default bullet points */
     padding: 0; /* Remove default padding */
-  
 }
 #current-playing,#current-playing-info{
   font-size: 25px;
@@ -175,6 +187,10 @@ border-radius: 20px;
   height: auto;
   font-size: 16px !important;
 }
+
+/*unwanted codes*/
+
+
 
 
 
