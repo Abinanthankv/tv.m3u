@@ -436,4 +436,4 @@ function getTimeshiftedCurrentTime(timeShiftSeconds) {
   return formattedTime;
 }
 
-//unwanted codes
+
