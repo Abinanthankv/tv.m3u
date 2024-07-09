@@ -17,12 +17,13 @@
 </head>
 <body>
   <div id="video-container">
-    <video id="myVideo" class="video-js" controls></video>
+    <video id="myVideo" class="video-js vjs-play-progress" controls></video>
     <div id="channel-info">
       <img id="channel-logo" src=""  />
       <span id="channel-name"></span>
     </div>
     <div id="nowplaying-info">
+      <img id="nowplaying-logo" src="" />
         <span id="current-playing"></span>
         <p id="current-playing-info"></p>
     </div>
@@ -30,6 +31,7 @@
   </div>
   
   <div id="channel-container">
+    
     <select id="language-filter">
       <option value="all">All language</option>
     </select>
@@ -38,7 +40,7 @@
     </select>
     
   </div>
-  <ul id="channel-list" class="logo-list"></ul>
+  <ul id="channel-list" class="logo-list channelList-active"></ul>
   
   <script src="script.js"></script>  
 </body>
