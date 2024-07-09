@@ -66,10 +66,27 @@ fetch("./streams.json")
         listItem.textContent = item.name;
         listItem.insertAdjacentHTML("beforeend", `<img src="${item.logo}">`);
         listItem.addEventListener("click", () => {
+          for (const channelItem of channelList.children) {
+            channelItem.style.backgroundColor = "";
+          }
+          listItem.style.backgroundColor = "lightgreen";
+          // to change css style
+          if (channelList.style.display==="flex") {
+            channelList.style.flexWrap = "wrap";
+            channelList.style.display = 'block';
+            channelList.style.flex="0 0 10%";
+            
+            
+          } else {
+            channelList.style.display = 'flex';
+            channelList.style.flex="0 0 40%"
+            
+          }
         var channelData = getChannelDataById(item.epgid);
         var sonyid=generatesonychannel(item.name);
           channelName.textContent = item.name;
           channelLogo.src = item.logo;
+          
           console.log(item.id);
           if(item.id!=null){
             player.pause();
@@ -80,29 +97,6 @@ fetch("./streams.json")
             player.load();
             player.play();
           }
-          else{
-            console.log(sonyid);
-           player.pause();
-           player.on('error', function(error) {
-            if (error.code === 4)  // Source not supported (likely no stream)
-             {            // HTTP error
-          
-              player.pause();  // Pause playback if needed
-              player.error({ code: -1, message: 'No stream found.' });  // Simulate an error with a custom message
-            } else {
-              console.error('Error:', error);  // Log other errors
-            }
-          });
-           player.src({
-          src: `https://allinonereborn.tech/sliv/${sonyid}.m3u8`,
-          
-           type: "application/x-mpegURL",
-            });
-          
-           player.load();
-           player.play();
-          }
-         
         });
         channelList.appendChild(listItem);
       }
@@ -112,13 +106,14 @@ fetch("./streams.json")
   
     var currentPlayingProgram=""; 
     var  currentPlayingPrograminfo="" ;// Initialize variable to store current program
-  
+    var nowplayinglogosrc="";
     const currentPlaying = document.getElementById("current-playing");
     const currentPlayinginfo = document.getElementById("current-playing-info");
-   
+    const currentPlayinglogo = document.getElementById("nowplaying-logo");
     var currentTime = getTimeshiftedCurrentTime(19800);
     currentPlaying.innerHTML="";
     currentPlayinginfo.innerHTML="";
+    currentPlayinglogo.src="";
     
      //currentPlaying.textContent= "Now Playing "
      fetch("./prod.json")
@@ -132,6 +127,7 @@ fetch("./streams.json")
     const title = channel.title;
     const description = channel.description;
     const channelName = channel.name;
+    const nowplaying = channel.nowplayinglogo;
     
    
     //now playing data
@@ -141,10 +137,10 @@ fetch("./streams.json")
       {
         currentPlayingProgram = title;
       currentPlayingPrograminfo = description;
-     
+      nowplayinglogosrc =nowplaying;
         currentPlaying.textContent= "Now Playing: "+ currentPlayingProgram;
         currentPlayinginfo.textContent= "Information->"+ currentPlayingPrograminfo ;
-        
+        currentPlayinglogo.src=nowplayinglogosrc;
         foundCurrentProgram = true; 
       }
       if (foundCurrentProgram) {
