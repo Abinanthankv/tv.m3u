@@ -14,6 +14,11 @@ const myVideo = document.getElementById("myVideo");
 const filterLanguage = document.getElementById("language-filter");
 const filterCategory = document.getElementById("channel-filter");
 
+filterLanguage.addEventListener("click",()=>{
+  channelList.style.flex="0 0 35%";
+
+});
+
 // Replace 'your_data.json' with the actual path to your JSON file
 fetch("./streams.json")
   .then((response) => response.json())
@@ -68,20 +73,12 @@ fetch("./streams.json")
         listItem.addEventListener("click", () => {
           for (const channelItem of channelList.children) {
             channelItem.style.backgroundColor = "";
+            channelList.style.flex="0 0 20%"
           }
           listItem.style.backgroundColor = "lightgreen";
+         
           // to change css style
-          if (channelList.style.display==="flex") {
-            channelList.style.flexWrap = "wrap";
-            channelList.style.display = 'block';
-             channelList.style.flex="0 0 18%";
-            
-            
-          } else {
-            channelList.style.display = 'flex';
-            channelList.style.flex="0 0 30%"
-            
-          }
+         
         var channelData = getChannelDataById(item.epgid);
         var sonyid=generatesonychannel(item.name);
           channelName.textContent = item.name;
