@@ -14,9 +14,9 @@ const myVideo = document.getElementById("myVideo");
 const filterLanguage = document.getElementById("language-filter");
 const filterCategory = document.getElementById("channel-filter");
 
-filterLanguage.addEventListener("click", () => {
-  channelList.style.flex = "0 0 35%";
-});
+
+
+
 
 // Replace 'your_data.json' with the actual path to your JSON file
 fetch("./streams.json")
@@ -72,7 +72,32 @@ fetch("./streams.json")
         const listItem = document.createElement("li");
         // logoImg.src = item.logo;
         listItem.textContent = item.name;
+        listItem.addEventListener("scroll", () => {
+          player.pause();
+        });
         listItem.insertAdjacentHTML("beforeend", `<img src="${item.logo}">`);
+        listItem.addEventListener("mouseenter", () => {
+        
+          // Mute the main player
+         // player.muted(true);
+          
+          // Set a temporary source for preview
+          player .src({
+            src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
+            type: "application/x-mpegURL",
+          });
+          // Play the preview at a muted and slower playback rate
+          player .playbackRate(1);
+          player .load();
+          player .play();
+        });
+        listItem.addEventListener("mouseleave", () => {
+          // Unmute the main player
+         // player.muted(false);
+          // Reset the preview source and playback state
+         
+          //player.pause();
+        });
         listItem.addEventListener("click", () => {
           for (const channelItem of channelList.children) {
             channelItem.style.backgroundColor = ""; 
