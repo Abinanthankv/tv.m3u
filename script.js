@@ -1,11 +1,11 @@
-
-
-
-
 var player = videojs("myVideo", {
   playbackRates: [0.5, 1, 1.5, 2], // Optional playback rate options
 });
-player.hlsQualitySelector({ displayCurrentQuality: true });
+
+player.hlsQualitySelector({
+  displayCurrentQuality: true,
+  default: "highest",
+});
 
 const channelList = document.getElementById("channel-list");
 const channelName = document.getElementById("channel-name");
@@ -14,9 +14,8 @@ const myVideo = document.getElementById("myVideo");
 const filterLanguage = document.getElementById("language-filter");
 const filterCategory = document.getElementById("channel-filter");
 
-filterLanguage.addEventListener("click",()=>{
-  channelList.style.flex="0 0 35%";
-
+filterLanguage.addEventListener("click", () => {
+  channelList.style.flex = "0 0 35%";
 });
 
 // Replace 'your_data.json' with the actual path to your JSON file
@@ -43,7 +42,7 @@ fetch("./streams.json")
     });
     filterCategory.parentElement.appendChild(filterLanguage);
     filterCategory.addEventListener("change", () => {
-     channelList.innerHTML = "";
+      channelList.innerHTML = "";
     });
     filterLanguage.addEventListener("change", () => {
       const selectedGroup = filterLanguage.value;
@@ -53,43 +52,42 @@ fetch("./streams.json")
       if (selectedGroup === "all" && selectedCategory === "all") {
         filteredData = data;
       } else if (selectedGroup === "all") {
-        filteredData = data.filter((item) => item.category === selectedCategory);
+        filteredData = data.filter(
+          (item) => item.category === selectedCategory
+        );
       } else if (selectedCategory === "all") {
         filteredData = data.filter((item) => item.language === selectedGroup);
       } else {
         filteredData = data.filter(
-          (item) => item.language === selectedGroup && item.category === selectedCategory
+          (item) =>
+            item.language === selectedGroup &&
+            item.category === selectedCategory
         );
       }
-    
+
       // Clear existing channel list and repopulate with filtered data
       channelList.innerHTML = "";
       for (const item of filteredData) {
-      //  const logoImg = document.createElement("img");
+        //  const logoImg = document.createElement("img");
         const listItem = document.createElement("li");
-       // logoImg.src = item.logo;
+        // logoImg.src = item.logo;
         listItem.textContent = item.name;
         listItem.insertAdjacentHTML("beforeend", `<img src="${item.logo}">`);
         listItem.addEventListener("click", () => {
           for (const channelItem of channelList.children) {
-            channelItem.style.backgroundColor = "";
-            channelList.style.flex="0 0 20%"
+            channelItem.style.backgroundColor = ""; 
           }
           listItem.style.backgroundColor = "lightgreen";
-         
           // to change css style
-         
-        var channelData = getChannelDataById(item.epgid);
-        var sonyid=generatesonychannel(item.name);
+          var channelData = getChannelDataById(item.epgid);
           channelName.textContent = item.name;
           channelLogo.src = item.logo;
-          
-          console.log(item.id);
-          if(item.id!=null){
+          if (item.id != null) {
             player.pause();
             player.src({
               src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
               type: "application/x-mpegURL",
+              suggestedQuality: "hd",
             });
             player.load();
             player.play();
@@ -99,67 +97,68 @@ fetch("./streams.json")
       }
     });
   });
-  function getChannelDataById(channelId) {
-  
-    var currentPlayingProgram=""; 
-    var  currentPlayingPrograminfo="" ;// Initialize variable to store current program
-    var nowplayinglogosrc="";
-    const currentPlaying = document.getElementById("current-playing");
-    const currentPlayinginfo = document.getElementById("current-playing-info");
-    const currentPlayinglogo = document.getElementById("nowplaying-logo");
-    var currentTime = getTimeshiftedCurrentTime(19800);
-    currentPlaying.innerHTML="";
-    currentPlayinginfo.innerHTML="";
-    currentPlayinglogo.src="";
-    
-     //currentPlaying.textContent= "Now Playing "
-     fetch("./prod.json")
+function getChannelDataById(channelId) {
+  var currentPlayingProgram = "";
+  var currentPlayingPrograminfo = ""; // Initialize variable to store current program
+
+  const currentPlaying = document.getElementById("current-playing");
+  const currentPlayinginfo = document.getElementById("current-playing-info");
+
+  var currentTime = getTimeshiftedCurrentTime(19800);
+  currentPlaying.innerHTML = "";
+  currentPlayinginfo.innerHTML = "";
+
+  //currentPlaying.textContent= "Now Playing "
+  fetch("./prod.json")
     .then((response) => response.json())
     .then((data) => {
-      let foundCurrentProgram = false
-        for (var i = 0; i < data.length; i++) {
-          var channel = data[i];    
-         const startTime = channel.start_time;
-    const stopTime = channel.stop_time;
-    const title = channel.title;
-    const description = channel.description;
-    const channelName = channel.name;
-    const nowplaying = channel.nowplayinglogo;
-    
-   
-    //now playing data
-    if (startTime < currentTime && currentTime < stopTime) {
-       // Store the title of the current program
-      if(channelName===channelId)
-      {
-        currentPlayingProgram = title;
-      currentPlayingPrograminfo = description;
-      nowplayinglogosrc =nowplaying;
-        currentPlaying.textContent= "Now Playing: "+ currentPlayingProgram;
-        currentPlayinginfo.textContent= "Information->"+ currentPlayingPrograminfo ;
-        currentPlayinglogo.src=nowplayinglogosrc;
-        foundCurrentProgram = true; 
-      }
-      if (foundCurrentProgram) {
-        break;
-      }
-      // Stop iterating after finding the current program
-    }
+      let foundCurrentProgram = false;
+      for (var i = 0; i < data.length; i++) {
+        var channel = data[i];
+        const startTime = channel.start_time;
+        const stopTime = channel.stop_time;
+        const title = channel.title;
+        const description = channel.description;
+        const channelName = channel.name;
+        const nowplaying = channel.nowplayinglogo;
+
+        //now playing data
+        if (startTime < currentTime && currentTime < stopTime) {
+          // Store the title of the current program
+          if (channelName === channelId) {
+            currentPlayingProgram = title;
+            currentPlayingPrograminfo = description;
+
+            currentPlaying.textContent =
+              "Now Playing: " + currentPlayingProgram;
+            currentPlayinginfo.textContent =
+              "Information->" + currentPlayingPrograminfo;
+              
+            foundCurrentProgram = true;
+            
+          }
+          if (foundCurrentProgram) {
+            
+            break;
+          }
+         
+          // Stop iterating after finding the current program
         }
-
-  });   
-  }
-  function generatesonychannel(channelName) {
-    // Remove unnecessary characters and spaces for a cleaner format
-    const sanitizedName = channelName.replace(/\W/g, '-').toLowerCase();
-    return sanitizedName;
-  }
-
+      }
+      
+    });
+    
+}
+function generatesonychannel(channelName) {
+  // Remove unnecessary characters and spaces for a cleaner format
+  const sanitizedName = channelName.replace(/\W/g, "-").toLowerCase();
+  return sanitizedName;
+}
 
 function getTimeshiftedCurrentTime(timeShiftSeconds) {
   // Check if timeShiftSeconds is a number (optional)
-  if (typeof timeShiftSeconds !== 'number') {
-    console.warn('timeShiftSeconds is not a number. Using 0 seconds offset.');
+  if (typeof timeShiftSeconds !== "number") {
+    console.warn("timeShiftSeconds is not a number. Using 0 seconds offset.");
     timeShiftSeconds = 0;
   }
 
@@ -183,8 +182,7 @@ function getTimeshiftedCurrentTime(timeShiftSeconds) {
   var second = adjustedDate.getSeconds().toString().padStart(2, "0");
 
   // Combine the formatted components into the desired format (remove seconds for now)
-  var formattedTime = year + month + day + hour + minute+"00";
- console.log(formattedTime)
+  var formattedTime = year + month + day + hour + minute + "00";
+  console.log(formattedTime);
   return formattedTime;
 }
-
