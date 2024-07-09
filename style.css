@@ -175,5 +175,11 @@ body {
     background-color: grey;
   }
  
+  .vjs-control-bar{
+    height: auto;
+    font-size: 16px !important;
+  }
+ 
+  
 
   
