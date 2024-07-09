@@ -13,8 +13,7 @@ const channelLogo = document.getElementById("channel-logo");
 const myVideo = document.getElementById("myVideo");
 const filterLanguage = document.getElementById("language-filter");
 const filterCategory = document.getElementById("channel-filter");
-
-
+var activeChannel="";
 
 
 
@@ -42,7 +41,26 @@ fetch("./streams.json")
     });
     filterCategory.parentElement.appendChild(filterLanguage);
     filterCategory.addEventListener("change", () => {
-      channelList.innerHTML = "";
+      const selectedGroup = filterLanguage.value;
+      const selectedCategory = filterCategory.value;
+      let filteredData;
+      // Filter data based on selected group (language) and category
+      if (selectedGroup === "all" && selectedCategory === "all") {
+        filteredData = data;
+      } else if (selectedGroup === "all") {
+        filteredData = data.filter(
+          (item) => item.category === selectedCategory
+        );
+      } else if (selectedCategory === "all") {
+        filteredData = data.filter((item) => item.language === selectedGroup);
+      } else {
+        filteredData = data.filter(
+          (item) =>
+            item.language === selectedGroup &&
+            item.category === selectedCategory
+        );
+      }
+      filtereditemlist(filteredData);
     });
     filterLanguage.addEventListener("change", () => {
       const selectedGroup = filterLanguage.value;
@@ -64,32 +82,41 @@ fetch("./streams.json")
             item.category === selectedCategory
         );
       }
+      filtereditemlist(filteredData);
+    });
+     function filtereditemlist(filteredData){
 
+     
       // Clear existing channel list and repopulate with filtered data
+      
       channelList.innerHTML = "";
       for (const item of filteredData) {
         //  const logoImg = document.createElement("img");
         const listItem = document.createElement("li");
+       
+        
         // logoImg.src = item.logo;
         listItem.textContent = item.name;
-        listItem.addEventListener("scroll", () => {
-          player.pause();
-        });
         listItem.insertAdjacentHTML("beforeend", `<img src="${item.logo}">`);
         listItem.addEventListener("mouseenter", () => {
         
           // Mute the main player
          // player.muted(true);
-          
+         
           // Set a temporary source for preview
-          player .src({
-            src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
-            type: "application/x-mpegURL",
-          });
+         // channelName.textContent = item.name;
+        var channelData = getChannelDataById(item.epgid);
+          channelLogo.src = item.logo;
+          channelName.textContent = item.name;
+        //  listItem.style.backgroundColor = "lightgreen";
+        //  player .src({
+        //    src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
+         //   type: "application/x-mpegURL",
+         // });
           // Play the preview at a muted and slower playback rate
-          player .playbackRate(1);
-          player .load();
-          player .play();
+         // player .playbackRate(1);
+         // player .load();
+         // player .play();
         });
         listItem.addEventListener("mouseleave", () => {
           // Unmute the main player
@@ -97,14 +124,21 @@ fetch("./streams.json")
           // Reset the preview source and playback state
          
           //player.pause();
+         channelLogo.src =activeChannel.logo;
+         channelName.textContent =activeChannel.name;
+         var channelData = getChannelDataById(activeChannel.epgid);
+        //listItem.style.backgroundColor = "green";
         });
         listItem.addEventListener("click", () => {
-          for (const channelItem of channelList.children) {
-            channelItem.style.backgroundColor = ""; 
-          }
+         for (const channelItem of channelList.children) {
+           channelItem.style.backgroundColor = ""; 
+         }
           listItem.style.backgroundColor = "lightgreen";
           // to change css style
           var channelData = getChannelDataById(item.epgid);
+          activeChannel=item;
+          console.log(activeChannel);
+          
           channelName.textContent = item.name;
           channelLogo.src = item.logo;
           if (item.id != null) {
@@ -119,20 +153,19 @@ fetch("./streams.json")
           }
         });
         channelList.appendChild(listItem);
+       
       }
+    }
     });
-  });
+ // });
 function getChannelDataById(channelId) {
   var currentPlayingProgram = "";
   var currentPlayingPrograminfo = ""; // Initialize variable to store current program
-
   const currentPlaying = document.getElementById("current-playing");
   const currentPlayinginfo = document.getElementById("current-playing-info");
-
   var currentTime = getTimeshiftedCurrentTime(19800);
   currentPlaying.innerHTML = "";
   currentPlayinginfo.innerHTML = "";
-
   //currentPlaying.textContent= "Now Playing "
   fetch("./prod.json")
     .then((response) => response.json())
@@ -146,23 +179,20 @@ function getChannelDataById(channelId) {
         const description = channel.description;
         const channelName = channel.name;
         const nowplaying = channel.nowplayinglogo;
-
         //now playing data
         if (startTime < currentTime && currentTime < stopTime) {
           // Store the title of the current program
           if (channelName === channelId) {
             currentPlayingProgram = title;
             currentPlayingPrograminfo = description;
-
             currentPlaying.textContent =
               "Now Playing: " + currentPlayingProgram;
             currentPlayinginfo.textContent =
               "Information->" + currentPlayingPrograminfo;
-              
             foundCurrentProgram = true;
-            
           }
           if (foundCurrentProgram) {
+            
             
             break;
           }
@@ -172,6 +202,7 @@ function getChannelDataById(channelId) {
       }
       
     });
+    return currentPlayingProgram;
     
 }
 function generatesonychannel(channelName) {
@@ -211,3 +242,6 @@ function getTimeshiftedCurrentTime(timeShiftSeconds) {
   console.log(formattedTime);
   return formattedTime;
 }
+
+//unwanted codes
+
