@@ -11,6 +11,7 @@ const channelLogo = document.getElementById("channel-logo");
 const myVideo = document.getElementById("myVideo");
 const filterLanguage = document.getElementById("language-filter");
 const filterCategory = document.getElementById("channel-filter");
+const channelInfo=document.getElementById("channel-info")
 
 const scrollableDiv = document.getElementById("your-scrollable-div");
 const tagid=document.getElementsByClassName("nowplayingtag");
@@ -168,6 +169,8 @@ fetch("./streams.json")
         });
 
         listItem.addEventListener("click", () => {
+          const channelInfo=document.getElementById("channel-info")
+         channelInfo.style.display="flex";
           for (const channelItem of channelList.children) {
             channelItem.style.backgroundColor = "";
           }
@@ -211,9 +214,11 @@ function getChannelDataById(channelId) {
   var tagid=document.getElementById("nowplayingtag");
   var upcoming=document.getElementById("upcoming");
   var channelLogo=document.getElementById("channel-logo");
+  
   tagid.style.display="block";
   upcoming.style.display="block";
   channelLogo.style.display="block";
+ 
  
   
   
@@ -388,6 +393,7 @@ toggleButton.addEventListener("click", function() {
   if (isListExpanded) {
     // Collapse the list
     channelid.classList.add("collapsed");
+    
     toggleButton.textContent = "collapse List";
   } else {
     // Expand the list
