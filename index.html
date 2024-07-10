@@ -28,17 +28,21 @@
             <img id="channel-logo" src="" />
             <span id="channel-name"></span>
           </div>
+          <div id="your-scrollable-div">
+            <div id="nowplaying-info" class="info-item">
+              <span id="nowplayingtag">Now Playing: </span>
+              <span id="current-playing"></span>
 
-          <div id="nowplaying-info">
-            <span id="current-playing"></span>
-            <p id="current-playing-info"></p>
+              <p id="current-playing-info"></p>
+            </div>
+            <span></span>
+            <div id="upcoming-info" class="info-item">
+              <span id="upcoming">Upcoming: </span>
+              <span id="upcoming-playing"></span>
+              <p id="upcoming-playing-info"></p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="upcoming-info">
-        <span id="upcoming-playing"></span>
-        <p id="upcoming-playing-info"></p>
       </div>
     </div>
 
@@ -49,9 +53,16 @@
       <select id="channel-filter">
         <option value="all">All category</option>
       </select>
+      
+      
     </div>
+    <div>
+      <button id="toggle-list-size">Toggle List Size</button>
+    </div>
+   
+     
     <div id="channel-list-container">
-      <ul id="channel-list" class="logo-list channelList-active"></ul>
+      <ul id="channel-list" class="logo-list "></ul>
     </div>
 
     <script src="script.js"></script>
