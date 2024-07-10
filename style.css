@@ -60,6 +60,7 @@ body {
   /*height: 300px;*/
   height: 55vh; 
   margin: 0;
+ 
 }
 
 #channel-logo{
@@ -75,10 +76,15 @@ body {
   align-items: center;
   
 }
-#video-details{
-  
+#video-details {
+  position: sticky; /* Enable sticky positioning */
   display: flex;
-  flex-wrap: wrap;
+  top: 0; /* Stick to the top of the viewport */
+  width: 100%; /* Maintain full width */
+  background-color: #fff; /* Optional background color for visibility */
+  padding: 0px; /* Optional padding for aesthetics */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+  z-index: 10; /* Ensure video details stay above other elements */
 }
 .upcoming-info{
   flex:10% 10% 20px;
