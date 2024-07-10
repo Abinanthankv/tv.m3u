@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 /* Filter Section */
@@ -36,12 +37,12 @@ body {
   justify-content: space-evenly;
  align-items: top;
   
-  width: 170px;
+  width: 220px;
  /* background-color: #f1f1f1; */
   flex-wrap: wrap;
   text-align: center; /* Center the content of each item */
   font-family: Arial, sans-serif; /* Set font family */
-  font-size: 16px; /* Set font size */
+   /* Set font size */
   cursor: pointer; /* Change cursor to pointer on hover */
   /* Light gray background for list items */
   color: black; /* Text color for list items */
@@ -97,8 +98,13 @@ body {
   color: greenyellow;
 }
 #toggle-list-size{
-  height: 30px;
-  width:fit-content;
+  height: 50px;
+  width:120px;
+  margin: 10px;
+  border-radius: 20px;
+  height: 50px;
+  text-align: center;
+  border-style: dashed;
 }
 .collapsed {
   background-color: #333333;
@@ -110,6 +116,7 @@ body {
   height: 200px;
   width:200px;
   display: flex;
+  font-size: 25px;
   justify-content: space-between;
   background-color: antiquewhite;
 
@@ -146,13 +153,23 @@ body {
 }
 
 #channel-info{
+  display: none;
   font-size: 25px;
+  
   padding: auto;
   background-color: #333333;
   color: whitesmoke;
   flex-direction: row;
- display: flex;
+  /*display: flex;*/
   /*align-items: center;*/
+}
+
+#toggle{
+  display: flex;
+  justify-content: space-between;
+  background-color: #333333;
+  
+
 }
 .info{
   display: flex;
@@ -174,18 +191,8 @@ display: flex; /* Make the list a flex container */
   padding: 0;
   margin: 0;
 }
-#channel-filter{
-  display: flex;
-flex-wrap: wrap; /* Allow items to wrap if overflow */
-list-style: none; /* Remove default list style */
-margin: 0; /* Remove default margin */
-padding: 0;
-height:50px;
-text-align: center;
-border-style: dashed;
-border-radius: 20px;
-}
-#language-filter{
+
+#language-filter,#channel-filter{
   display: flex;
 flex-wrap: wrap; /* Allow items to wrap if overflow */
 list-style: none; /* Remove default list style */
@@ -197,16 +204,8 @@ border-style: dashed;
 border-radius: 20px;
 }
 
-#channel-filter option {
-  margin: 5px; /* Add space between list items */
-  padding: 10px 15px; /* Add padding for content */
-  border: 1px solid #ccc; /* Add a thin border */
-  border-radius: 5px; /* Add rounded corners */
-  background-color: #fff; /* White background */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  font-size: 14px; /* Set font size for list items */
-}
-#language-filter option {
+
+#language-filter option  ,#channel-filter option {
   margin: 5px; /* Add space between list items */
   padding: 10px 15px; /* Add padding for content */
   border: 1px solid #ccc; /* Add a thin border */
@@ -229,7 +228,7 @@ border-radius: 20px;
 }
 #channel-container {
   display: flex;
-  background-color: #f0f0f0;
+ /* background-color: #f0f0f0;*/
   padding: 10px;
 }
 
