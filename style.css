@@ -34,15 +34,16 @@ body {
   padding-top: 10px;
   display: flex;
   justify-content: space-evenly;
- /* align-items: center;
-  height: fit-content;*/
+ align-items: top;
+  
   width: 170px;
+ /* background-color: #f1f1f1; */
   flex-wrap: wrap;
   text-align: center; /* Center the content of each item */
   font-family: Arial, sans-serif; /* Set font family */
   font-size: 16px; /* Set font size */
   cursor: pointer; /* Change cursor to pointer on hover */
-  background-color: #f1f1f1; /* Light gray background for list items */
+  /* Light gray background for list items */
   color: black; /* Text color for list items */
   border-radius: 5px; /* Add rounded corners for a softer look */
   /* Add box shadow for a subtle hover effect */
@@ -66,16 +67,73 @@ body {
 #channel-logo{
   margin: 0;
   padding: 0;
-  border: 1px solid #ccc;
+  border: none;
   width: 90px;
   height: 90px;
 
 }
 #nowplaying-info{
- 
+
   align-items: center;
   
 }
+#upcoming-info{
+  display: none;
+  padding: 0;
+  margin: 0 ;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 0;
+  
+}
+#nowplayingtag,#upcoming,#channel-logo{
+  display: none;
+  
+  
+}
+#nowplayingtag,#upcoming{
+  font-weight: 30px;
+  color: greenyellow;
+}
+#toggle-list-size{
+  height: 30px;
+  width:fit-content;
+}
+.collapsed {
+  background-color: #333333;
+  
+ 
+  
+}
+.collapsed li{
+  height: 200px;
+  width:200px;
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+
+}
+.collapsed img{
+  width: inherit;
+}
+
+#upcoming-info p{
+  display: flex;
+  top: 0;
+  font-style: italic;
+  gap: 0;
+}
+
+#your-scrollable-div{
+  /* Set a height for the element to create scrollable content */
+  height: 120px; /* Adjust as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  background-color: transparent;
+  color: whitesmoke;
+}
+
 #video-details {
   position: sticky; /* Enable sticky positioning */
   display: flex;
@@ -86,18 +144,12 @@ body {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
   z-index: 10; /* Ensure video details stay above other elements */
 }
-.upcoming-info{
-  flex:10% 10% 20px;
-  flex-wrap: wrap;
-  width: 150px;
-  
-}
 
 #channel-info{
   font-size: 25px;
   padding: auto;
-  background-color: bisque;
-  
+  background-color: #333333;
+  color: whitesmoke;
   flex-direction: row;
  display: flex;
   /*align-items: center;*/
@@ -105,10 +157,13 @@ body {
 .info{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 130px;
 }
 #channel-container{
 /* flex: 0 0 25%;*/
 display: flex; /* Make the list a flex container */
+
    /* Adjust width as needed */
   /*  margin: 0 auto; /* Center the list horizontally */
     list-style: none; /* Remove default bullet points */
@@ -180,7 +235,7 @@ border-radius: 20px;
 
 #channel-list {
   flex:0 0 1%;
-  display: flex;
+ display: flex;
   flex-wrap: wrap;
   width: fit-content;
   list-style: none;
