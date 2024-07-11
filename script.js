@@ -5,6 +5,8 @@ player.hlsQualitySelector({
   displayCurrentQuality: true,
   default: "highest",
 });
+
+
 const channelList = document.getElementById("channel-list");
 const channelName = document.getElementById("channel-name");
 const channelLogo = document.getElementById("channel-logo");
@@ -13,9 +15,159 @@ const filterLanguage = document.getElementById("language-filter");
 const filterCategory = document.getElementById("channel-filter");
 const channelInfo=document.getElementById("channel-info")
 
+
 const scrollableDiv = document.getElementById("your-scrollable-div");
 const tagid=document.getElementsByClassName("nowplayingtag");
+const HD=document.getElementById("toggle-HD");
+const bd=document.getElementById("body");
+// Initially empty
+
+
 var activeChannel = "";
+let filteredData;
+let isShowHD = false; 
+let nowspan="";
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  //console.log("loaded");
+  fetch("./streams.json")
+  .then((response) => response.json())
+  .then((data) => {
+        filtereditemlist(data);
+  });
+  function filtereditemlist(filteredData) {
+    // Clear existing channel list and repopulate with filtered data
+
+    channelList.innerHTML = "";
+    
+    for (const item of filteredData) {
+      //  const logoImg = document.createElement("img");
+      const listItem = document.createElement("li");
+      listItem.id = "channelID";
+      // logoImg.src = item.logo;
+      
+      listItem.textContent = item.name;
+      listItem.insertAdjacentHTML("beforeend", `<img src="${item.logo}">`);
+      
+      const nowPlayingSpan = document.createElement("span");
+      // nowPlayingSpan.classList.add("nowplaying-span"); 
+       nowPlayingSpan.id="nowplaying-span"// Add a class for styling
+      
+
+       
+
+
+       listItem.appendChild(nowPlayingSpan);
+     
+   
+   
+      
+      
+     listItem.addEventListener("mouseenter", () => {
+        // Mute the main player
+
+        // player.muted(true);
+
+        // Set a temporary source for preview
+
+        // channelName.textContent = item.name;
+
+     //   var channelData = getChannelDataById(item.epgid);
+     getChannelDataById(item.epgid)
+       .then(function(data) {
+         nowPlayingSpan.textContent=data;
+   // Use the retrieved data (e.g., display it on the webpage)
+       });
+     
+
+        channelLogo.src = item.logo;
+
+        channelName.textContent = item.name;
+      //  listItem.style.backgroundColor="green";
+
+        //  player .src({
+
+        //    src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
+
+        //   type: "application/x-mpegURL",
+
+        // });
+
+        // Play the preview at a muted and slower playback rate
+
+        // player .playbackRate(1);
+
+        // player .load();
+
+        // player .play();
+      });
+
+     /* listItem.addEventListener("mouseleave", () => {
+        // Unmute the main player
+
+        // player.muted(false);
+
+        // Reset the preview source and playback state
+
+        //player.pause();
+       // listItem.style.backgroundColor="#f1f1f1";
+
+        channelLogo.src = activeChannel.logo;
+
+        channelName.textContent = activeChannel.name;
+
+        var channelData = getChannelDataById(activeChannel.epgid);
+      });*/
+
+      listItem.addEventListener("click", () => {
+        const channelInfo=document.getElementById("channel-info")
+       channelInfo.style.display="flex";
+        for (const channelItem of channelList.children) {
+          channelItem.style.backgroundColor = "";
+        }
+      
+        // to change css style
+        listItem.style.backgroundColor="lightgreen";
+        //var channelData =  getChannelDataById(item.epgid);
+      
+        //console.log("channeldata",channelData);
+    
+        
+        
+        //activeChannel = item;
+        
+        
+        channelName.textContent = item.name;
+        channelLogo.src = item.logo;
+        if (item.id != null) {
+          player.pause();
+
+          player.src({
+         src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
+         // src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=598&e=.m3u8`,
+        
+            type: "application/x-mpegURL",
+
+         
+          });
+
+          player.load();
+
+          player.play();
+         
+        }
+     
+      });
+
+      channelList.appendChild(listItem);
+    }
+  }
+      
+  
+
 
 fetch("./streams.json")
   .then((response) => response.json())
@@ -24,6 +176,7 @@ fetch("./streams.json")
     const uniqueGroups = [...new Set(data.map((item) => item.language))];
     const uniqueCategories = [...new Set(data.map((item) => item.category))];
     // Populate the filter select element with group (language) and category options
+    
     uniqueGroups.forEach((language) => {
       const option = document.createElement("option");
       option.value = language;
@@ -40,32 +193,28 @@ fetch("./streams.json")
 
       filterCategory.appendChild(option);
     });
-
     filterCategory.parentElement.appendChild(filterLanguage);
-
     filterCategory.addEventListener("change", () => {
       const selectedGroup = filterLanguage.value;
-
       const selectedCategory = filterCategory.value;
-
-      let filteredData;
-
       // Filter data based on selected group (language) and category
 
-      if (selectedGroup === "all" && selectedCategory === "all") {
+      if (selectedGroup === "all" && selectedCategory === "all" ) {
         filteredData = data;
-      } else if (selectedGroup === "all") {
+      } else if (selectedGroup === "all" ) {
         filteredData = data.filter(
           (item) => item.category === selectedCategory
         );
       } else if (selectedCategory === "all") {
         filteredData = data.filter((item) => item.language === selectedGroup);
       } else {
-        filteredData = data.filter(
-          (item) =>
-            item.language === selectedGroup &&
-            item.category === selectedCategory
-        );
+       
+          filteredData = data.filter(
+            (item) =>
+              item.language === selectedGroup &&
+              item.category === selectedCategory
+              
+          );
       }
 
       filtereditemlist(filteredData);
@@ -76,7 +225,7 @@ fetch("./streams.json")
 
       const selectedCategory = filterCategory.value;
 
-      let filteredData;
+     
 
       // Filter data based on selected group (language) and category
 
@@ -85,6 +234,7 @@ fetch("./streams.json")
       } else if (selectedGroup === "all") {
         filteredData = data.filter(
           (item) => item.category === selectedCategory
+         
         );
       } else if (selectedCategory === "all") {
         filteredData = data.filter((item) => item.language === selectedGroup);
@@ -98,112 +248,69 @@ fetch("./streams.json")
 
       filtereditemlist(filteredData);
     });
+    HD.addEventListener("click", function () {
+     // Get the checked state of the toggle button
+    
+      channelList.innerHTML="";
+      const language=filterLanguage.value;
+      const category=filterCategory.value;
+      
 
-    function filtereditemlist(filteredData) {
-      // Clear existing channel list and repopulate with filtered data
-
-      channelList.innerHTML = "";
-
-      for (const item of filteredData) {
-        //  const logoImg = document.createElement("img");
-
-        const listItem = document.createElement("li");
-        
-        listItem.id = "channelID";
-        
-
-        // logoImg.src = item.logo;
-
-        listItem.textContent = item.name;
-
-        listItem.insertAdjacentHTML("beforeend", `<img src="${item.logo}">`);
-
-        listItem.addEventListener("mouseenter", () => {
-          // Mute the main player
-
-          // player.muted(true);
-
-          // Set a temporary source for preview
-
-          // channelName.textContent = item.name;
-
-          var channelData = getChannelDataById(item.epgid);
-
-          channelLogo.src = item.logo;
-
-          channelName.textContent = item.name;
-        //  listItem.style.backgroundColor="green";
-
-          //  player .src({
-
-          //    src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
-
-          //   type: "application/x-mpegURL",
-
-          // });
-
-          // Play the preview at a muted and slower playback rate
-
-          // player .playbackRate(1);
-
-          // player .load();
-
-          // player .play();
-        });
-
-        listItem.addEventListener("mouseleave", () => {
-          // Unmute the main player
-
-          // player.muted(false);
-
-          // Reset the preview source and playback state
-
-          //player.pause();
-         // listItem.style.backgroundColor="#f1f1f1";
-
-          channelLogo.src = activeChannel.logo;
-
-          channelName.textContent = activeChannel.name;
-
-          var channelData = getChannelDataById(activeChannel.epgid);
-        });
-
-        listItem.addEventListener("click", () => {
-          const channelInfo=document.getElementById("channel-info")
-         channelInfo.style.display="flex";
-          for (const channelItem of channelList.children) {
-            channelItem.style.backgroundColor = "";
-          }
-          
-          // to change css style
-          listItem.style.backgroundColor="lightgreen";
-          var channelData = getChannelDataById(item.epgid);
-          activeChannel = item;
-          channelName.textContent = item.name;
-          channelLogo.src = item.logo;
-          if (item.id != null) {
-            player.pause();
-
-            player.src({
-            src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
-          
-              type: "application/x-mpegURL",
-
-              suggestedQuality: "hd",
-            });
-
-            player.load();
-
-            player.play();
-          }
-        });
-
-        channelList.appendChild(listItem);
+      if (language === "all" && category === "all" &&isShowHD ) {
+        filteredData = data.filter(
+          (item) =>
+            item.group==="HD"   
+        );
       }
-    }
+      else if(language === "all" && category === "all"){
+        filteredData=data;
+      } 
+      else if (language === "all" &&isShowHD ) {
+        filteredData = data.filter(
+          (item) => item.category === category&&item.group==="HD"
+        );
+      } 
+      else if (language === "all"  ) {
+        filteredData = data.filter(
+          (item) => item.category === category
+        );
+      }
+      else if (category=== "all"&&isShowHD ) {
+        filteredData = data.filter((item) => item.language === language &&item.group==="HD");
+      }
+      else if (category=== "all" ) {
+        filteredData = data.filter((item) => item.language === language );
+      }
+       else {
+        if(isShowHD)
+        {
+          filteredData = data.filter(
+            (item) =>
+              item.language === language &&
+              item.category === category &&
+              item.group ==="HD"   
+          );
+        }
+        else{
+          filteredData = data.filter(
+            (item) =>
+              item.language === language &&
+              item.category === category &&
+              item.group ==="SD"     
+          );
+        }  
+      }
+      if (isShowHD) {
+        HD.textContent = "SD";
+      } else {
+        HD.textContent = "HD";
+      }
+      isShowHD= !isShowHD; // Toggle state for next click
+      filtereditemlist(filteredData); // Update the channel list based on filtering*/
+    });
   });
-
 // });
+}); 
 
 function getChannelDataById(channelId) {
   var currentPlayingProgram = "";
@@ -214,14 +321,13 @@ function getChannelDataById(channelId) {
   var tagid=document.getElementById("nowplayingtag");
   var upcoming=document.getElementById("upcoming");
   var channelLogo=document.getElementById("channel-logo");
-  
+  //
+
+  //
   tagid.style.display="block";
   upcoming.style.display="block";
   channelLogo.style.display="block";
  
- 
-  
-  
   const currentPlaying = document.getElementById("current-playing");
   const currentPlayinginfo = document.getElementById("current-playing-info");
   const upcomingPlaying = document.getElementById("upcoming-playing"); // Add element for upcoming info (optional)
@@ -232,7 +338,7 @@ function getChannelDataById(channelId) {
   upcomingPlaying.innerHTML = ""; // Clear upcoming info if displayed (optional)
   upcomingPlayinginfo.innerHTML = ""; // Clear upcoming info if displayed (optional)
   //currentPlaying.textContent= "Now Playing "
-  fetch("./prod.json")
+ return fetch("./prod.json")
     .then((response) => response.json())
     .then((data) => {
       let foundCurrentProgram = false;
@@ -250,8 +356,21 @@ function getChannelDataById(channelId) {
           if (channelName === channelId) {
             currentPlayingProgram = title;
             currentPlayingPrograminfo = description;
+            nowspan=title;
             currentPlaying.textContent = currentPlayingProgram;
             currentPlayinginfo.textContent =currentPlayingPrograminfo;
+           /* const starttimefrmtd= convertTimeToHHMM(startTime,0);
+            const completedTime = currentTime - startTime;
+            const hours = Math.floor(completedTime / 3600);
+            const minutes = Math.floor((completedTime  % 3600) / 60);
+            const seconds = Math.floor((completedTime  % 3600) % 60);
+            const formattedCompletedTime  =`${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            // Add element to display completed time (replace with your desired placement)
+            const completedTimeDisplay = document.createElement("div");
+            completedTimeDisplay.textContent = `Completed: ${starttimefrmtd}`;
+            currentPlaying.appendChild(completedTimeDisplay);*/
+
           
             // foundCurrentProgram = true;
           }
@@ -272,19 +391,15 @@ function getChannelDataById(channelId) {
             programLimit--;
           }
         }
-
         if (foundCurrentProgram) {
           break;
         }
       }
+      return currentPlayingProgram;
+    
     });
 
-  return {
-    currentPlayingProgram,
-    currentPlayingPrograminfo,
-    upcomingProgram,
-    upcomingPrograminfo,
-  };
+ 
 }
 
 function convertTimeToHHMM(timeString, timeshiftSeconds) {
@@ -377,7 +492,7 @@ function getTimeshiftedCurrentTime(timeShiftSeconds) {
 
   var formattedTime = year + month + day + hour + minute + "00";
 
-  console.log(formattedTime);
+  
 
   return formattedTime;
 }
@@ -385,21 +500,22 @@ function getTimeshiftedCurrentTime(timeShiftSeconds) {
 //unwanted codes
 const toggleButton = document.getElementById("toggle-list-size");
 const channelid=document.getElementById("channel-list");
-
-
 let isListExpanded = true; // Initial state (list starts expanded)
-
 toggleButton.addEventListener("click", function() {
   if (isListExpanded) {
     // Collapse the list
     channelid.classList.add("collapsed");
-    
     toggleButton.textContent = "collapse List";
+   // nowinfo.textContent="block";
+ //   nowinfo.style.display="block";
+   // bd.style.background="#333333";
   } else {
     // Expand the list
     channelid.classList.remove("collapsed");
     toggleButton.textContent = "Expand List";
   }
-
   isListExpanded = !isListExpanded; // Toggle state for next click
 });
+// Update the current time display every second
+
+
