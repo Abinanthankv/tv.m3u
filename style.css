@@ -77,6 +77,7 @@ body {
 
 #toggle-HD{
   height: 50px;
+  width: 120px;
   text-align: center;
   border-style: dashed;
   border-radius: 20px;
@@ -184,7 +185,7 @@ body {
 #toggle{
   display: flex;
   justify-content: space-between;
- /* background-color: #333333;*/
+  background-color: #333333;
   
 
 }
