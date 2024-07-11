@@ -19,10 +19,11 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/jb-videojs-hls-quality-selector@2.0.2/dist/jb-videojs-hls-quality-selector.min.js"></script>
   </head>
-  <body>
+  <body id="body">
     <div id="video-details">
       <div id="video-container">
         <video id="myVideo" class="video-js" controls></video>
+       
         <div id="channel-info">
           <div class="info">
             <img id="channel-logo" src="" />
@@ -56,6 +57,7 @@
       </select>
     </div>
     <div>
+      <button id="toggle-HD">HD/SD</button>
       <button id="toggle-list-size">Toggle List Size</button>
     </div>
   </div>
