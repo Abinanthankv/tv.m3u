@@ -373,7 +373,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/KTV_HD.png",
     "id": "894",
     "group": "all",
-    "category": "Unknown",
+    "category": "Movies",
     "epgid": "KTV.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=894&e=.m3u8",
     "language": "Tamil"
@@ -413,7 +413,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Udaya_HD.png",
     "id": "901",
     "group": "all",
-    "category": "Unknown",
+    "category": "kannada",
     "epgid": "UDAYA.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=901&e=.m3u8",
     "language": "Kannada"
@@ -622,7 +622,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/IBN_Lokmat.png",
     "id": "232",
     "group": "all",
-    "category": "Special Report",
+    "category": "News",
     "epgid": "NEWS18.LOKMAT.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=232&e=.m3u8"
   },
@@ -720,8 +720,8 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/sonic_Tamil.png",
     "id": "290",
     "group": "all",
-    "category": "Unknown",
-    "epgid": "SONIC.TAMIL.IN",
+    "category": "Kids",
+    "epgid": "SONIC.NICKELODEON.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=290&e=.m3u8",
     "language": "Tamil"
   },
@@ -902,7 +902,7 @@
     "category": "Movies",
     "epgid": "J.MOVIES.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=417&e=.m3u8",
-    "language": "Hindi"
+    "language": "Tamil"
   },
   {
     "name": "Jaya Plus",
@@ -1175,9 +1175,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/AL_Jazeera.png",
     "id": "494",
     "group": "all",
-    "category": "Special Report",
+    "category": "News",
     "epgid": "AL.JAZEERA.IN",
-    "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=494&e=.m3u8"
+    "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=494&e=.m3u8",
+    "language": "English"
   },
   {
     "name": "News X",
@@ -1532,8 +1533,8 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Pogo_Tamil.png",
     "id": "542",
     "group": "all",
-    "category": "Children",
-    "epgid": "POGO.TAMIL.IN",
+    "category": "Kids",
+    "epgid": "POGO.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=542&e=.m3u8",
     "language": "Tamil"
   },
@@ -1542,7 +1543,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Nick_Telugu.png",
     "id": "543",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "NICK.TELUGU.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=543&e=.m3u8",
     "language": "Telugu"
@@ -1552,7 +1553,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Nick_Junior.png",
     "id": "544",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "NICK.JUNIOR.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=544&e=.m3u8",
     "language": "English"
@@ -1562,7 +1563,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Nick_Hindi.png",
     "id": "545",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "NICK.HINDI.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=545&e=.m3u8",
     "language": "Hindi"
@@ -1572,7 +1573,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Nick_Tamil.png",
     "id": "546",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "NICK.TAMIL.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=546&e=.m3u8",
     "language": "Tamil"
@@ -1591,8 +1592,8 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Discovery_Kids_Tamil.png",
     "id": "550",
     "group": "all",
-    "category": "Children",
-    "epgid": "DISCOVERY.KIDS.TAMIL.IN",
+    "category": "Kids",
+    "epgid": "DISCOVERY.KIDS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=550&e=.m3u8",
     "language": "Tamil"
   },
@@ -1611,8 +1612,8 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Discovery_Kids_2.png",
     "id": "554",
     "group": "all",
-    "category": "Children",
-    "epgid": "DISCOVERY.KIDS.2.IN",
+    "category": "Kids",
+    "epgid": "DISCOVERY.KIDS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=554&e=.m3u8",
     "language": "English"
   },
@@ -1621,7 +1622,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Chintu_TV.png",
     "id": "555",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "CHINTU.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=555&e=.m3u8",
     "language": "Hindi"
@@ -1631,7 +1632,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Kochu_TV.png",
     "id": "556",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "KOCHU.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=556&e=.m3u8",
     "language": "Malayalam"
@@ -1641,7 +1642,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Chutti_TV.png",
     "id": "557",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "CHUTTI.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=557&e=.m3u8",
     "language": "Tamil"
@@ -1651,7 +1652,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Kushi_TV.png",
     "id": "558",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "KUSHI.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=558&e=.m3u8",
     "language": "Telugu"
@@ -1661,7 +1662,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Pogo_Hindi.png",
     "id": "559",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "POGO.HINDI.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=559&e=.m3u8",
     "language": "Hindi"
@@ -1751,7 +1752,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Discovery_Channel_Tamil.png",
     "id": "569",
     "group": "all",
-    "category": "Unknown",
+    "category": "Infotainment",
     "epgid": "D.TAMIL.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=569&e=.m3u8",
     "language": "Tamil"
@@ -2471,10 +2472,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sathiyam.png",
     "id": "671",
     "group": "all",
-    "category": "Unknown",
+    "category": "News",
     "epgid": "SATHIYAM.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=671&e=.m3u8",
-    "language": "Telugu"
+    "language": "Tamil"
   },
   {
     "name": "News7 Tamil",
@@ -2524,14 +2525,14 @@
     "category": "Movies",
     "epgid": "UDAYA.MOVIES.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=678&e=.m3u8",
-    "language": "Tamil"
+    "language": "Kannada"
   },
   {
     "name": "Sun Life",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sun_Life.png",
     "id": "682",
     "group": "all",
-    "category": "Lifestyle",
+    "category": "Movies",
     "epgid": "SUN.LIFE.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=682&e=.m3u8",
     "language": "Tamil"
@@ -2541,10 +2542,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Raj_Digital_Plus.png",
     "id": "683",
     "group": "all",
-    "category": "Unknown",
+    "category": "Movies",
     "epgid": "RAJ.DIGITAL.PLUS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=683&e=.m3u8",
-    "language": "Telugu"
+    "language": "Tamil"
   },
   {
     "name": "Gemini Life",
@@ -2554,7 +2555,7 @@
     "category": "Lifestyle",
     "epgid": "GEMINI.LIFE.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=684&e=.m3u8",
-    "language": "Tamil"
+    "language": "Telugu"
   },
   {
     "name": "Zee Bangla Cinema",
@@ -2591,10 +2592,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Saam_Tv.png",
     "id": "691",
     "group": "all",
-    "category": "Unknown",
+    "category": "News",
     "epgid": "SAAM.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=691&e=.m3u8",
-    "language": "Tamil"
+    "language": "Marathi"
   },
   {
     "name": "ETV Plus",
@@ -2681,7 +2682,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Polimer_TV.png",
     "id": "705",
     "group": "all",
-    "category": "Unknown",
+    "category": "Entertainment",
     "epgid": "POLIMER.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=705&e=.m3u8",
     "language": "Tamil"
@@ -2711,7 +2712,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Makkal_TV.png",
     "id": "708",
     "group": "all",
-    "category": "Children",
+    "category": "Entertainment",
     "epgid": "MAKKAL.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=708&e=.m3u8",
     "language": "Tamil"
@@ -2883,7 +2884,7 @@
     "category": "Comedy",
     "epgid": "GEMINI.COMEDY.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=729&e=.m3u8",
-    "language": "Tamil"
+    "language": "Telugu"
   },
   {
     "name": "Kairali WE TV",
@@ -2913,7 +2914,7 @@
     "category": "Comedy",
     "epgid": "UDAYA.COMEDY.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=733&e=.m3u8",
-    "language": "Tamil"
+    "language": "Kannada"
   },
   {
     "name": "Vissa TV",
@@ -3022,7 +3023,7 @@
     "category": "Music",
     "epgid": "UDAYA.MUSIC.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=744&e=.m3u8",
-    "language": "Tamil"
+    "language": "Kannada"
   },
   {
     "name": "Surya Music",
@@ -3032,7 +3033,7 @@
     "category": "Music",
     "epgid": "SURYA.MUSIC.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=747&e=.m3u8",
-    "language": "Tamil"
+    "language": "Malayalam"
   },
   {
     "name": "Raj Musix",
@@ -3455,7 +3456,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/sonic_Hindi.png",
     "id": "815",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "SONIC.HINDI.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=815&e=.m3u8",
     "language": "Hindi"
@@ -3465,7 +3466,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Cartoon_Network_Hindi.png",
     "id": "816",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "CARTOON.NETWORK.HINDI.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=816&e=.m3u8",
     "language": "Hindi"
@@ -3475,7 +3476,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Cartoon_Network_Tamil.png",
     "id": "817",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "CARTOON.NETWORK.TAMIL.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=817&e=.m3u8",
     "language": "Tamil"
@@ -3647,7 +3648,7 @@
     "category": "Entertainment",
     "epgid": "SMBC.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=851&e=.m3u8",
-    "language": "Tamil"
+    "language": "Hindi"
   },
   {
     "name": "Total TV",
@@ -3806,7 +3807,7 @@
     "category": "Entertainment",
     "epgid": "GEMINI.TV.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=897&e=.m3u8",
-    "language": "Tamil"
+    "language": "Telugu"
   },
   {
     "name": "Gemini Music HD",
@@ -3816,7 +3817,7 @@
     "category": "Music",
     "epgid": "GEMINI.MUSIC.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=898&e=.m3u8",
-    "language": "Tamil"
+    "language": "Telugu"
   },
   {
     "name": "Gemini Movies HD",
@@ -3826,7 +3827,7 @@
     "category": "Movies",
     "epgid": "GEMINI.MOVIES.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=899&e=.m3u8",
-    "language": "Tamil"
+    "language": "Telugu"
   },
   {
     "name": "Surya HD",
@@ -3836,7 +3837,7 @@
     "category": "Entertainment",
     "epgid": "SURYA.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=900&e=.m3u8",
-    "language": "Tamil"
+    "language": "Malayalam"
   },
   {
     "name": "Only Music",
@@ -4006,7 +4007,7 @@
     "category": "News",
     "epgid": "ZEE.24.KALAK.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=929&e=.m3u8",
-    "language": "Tamil"
+    "language": "Gujarati"
   },
   {
     "name": "4 TV",
@@ -4301,20 +4302,20 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/TEST1_HD.png",
     "id": "978",
     "group": "all",
-    "category": "Unknown",
+    "category": "Sports",
     "epgid": "TEST1.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=978&e=.m3u8",
-    "language": "Unknown"
+    "language": "English"
   },
   {
     "name": "TEST2 HD",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/TEST2_HD.png",
     "id": "979",
     "group": "all",
-    "category": "Unknown",
+    "category": "Sports",
     "epgid": "TEST2.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=979&e=.m3u8",
-    "language": "Unknown"
+    "language": "English"
   },
   {
     "name": "Swayam Prabha 01",
@@ -4591,8 +4592,8 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CN_HD_English.png",
     "id": "1079",
     "group": "all",
-    "category": "Unknown",
-    "epgid": "CN.HD+.ENGLISH.IN",
+    "category": "Kids",
+    "epgid": "CARTOON.NETWORK.HD+.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1079&e=.m3u8",
     "language": "English"
   },
@@ -4601,8 +4602,8 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CN_HD_Telugu.png",
     "id": "1080",
     "group": "all",
-    "category": "Unknown",
-    "epgid": "CN.HD+.TELUGU.IN",
+    "category": "Kids",
+    "epgid": "CARTOON.NETWORK.HD+.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1080&e=.m3u8",
     "language": "Telugu"
   },
@@ -4611,8 +4612,8 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CN_HD_Tamil.png",
     "id": "1081",
     "group": "all",
-    "category": "Unknown",
-    "epgid": "CN.HD+.TAMIL.IN",
+    "category": "Kids",
+    "epgid": "CARTOON.NETWORK.HD+.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1081&e=.m3u8",
     "language": "Tamil"
   },
@@ -5077,7 +5078,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Animal_Planet_HD_Tamil.png",
     "id": "1219",
     "group": "all",
-    "category": "Wildlife",
+    "category": "Infotainment",
     "epgid": "ANIMAL.PLANET.HD.TAMIL.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1219&e=.m3u8",
     "language": "Tamil"
@@ -5238,7 +5239,7 @@
     "category": "Entertainment",
     "epgid": "SAKKAT.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1245&e=.m3u8",
-    "language": "Tamil"
+    "language": "Others"
   },
   {
     "name": "Headlines Tripura",
@@ -5431,16 +5432,6 @@
     "language": "Hindi"
   },
   {
-    "name": "Vignesh TV",
-    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Vignesh_TV.PNG.png",
-    "id": "1284",
-    "group": "all",
-    "category": "Entertainment",
-    "epgid": "VIGNESH.TV.IN",
-    "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1284&e=.m3u8",
-    "language": "Tamil"
-  },
-  {
     "name": "Insync",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Insync.png",
     "id": "1286",
@@ -5458,7 +5449,7 @@
     "category": "News",
     "epgid": "ANB.NEWS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1287&e=.m3u8",
-    "language": "Tamil"
+    "language": "Hindi"
   },
   {
     "name": "Shri Omkareshwar Mandir",
@@ -5735,7 +5726,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/And_Prive_HD.png",
     "id": "1349",
     "group": "all",
-    "category": "Unknown",
+    "category": "Movies",
     "epgid": "AND.PRIVE.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1349&e=.m3u8",
     "language": "English"
@@ -6065,7 +6056,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/KITE_Victers.png",
     "id": "1429",
     "group": "all",
-    "category": "Children's",
+    "category": "Kids",
     "epgid": "KITE.VICTERS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1429&e=.m3u8",
     "language": "English"
@@ -6075,7 +6066,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Jio_KIDS.png",
     "id": "1430",
     "group": "all",
-    "category": "Children's",
+    "category": "Kids",
     "epgid": "JIO.KIDS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1430&e=.m3u8",
     "language": "English"
@@ -6939,7 +6930,7 @@
     "category": "Entertainment",
     "epgid": "SURYA.COMEDY.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1662&e=.m3u8",
-    "language": "Tamil"
+    "language": "Malayalam"
   },
   {
     "name": "ETV Cinema HD",
@@ -7287,7 +7278,7 @@
     "category": "Movies",
     "epgid": "SURYA.MOVIES.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1754&e=.m3u8",
-    "language": "Tamil"
+    "language": "Malayalam"
   },
   {
     "name": "NK TV Plus",
@@ -7393,7 +7384,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Hoopla_Kids_TV.png",
     "id": "1780",
     "group": "all",
-    "category": "Children's",
+    "category": "Kids",
     "epgid": "HOOPLAKIDZ.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1780&e=.m3u8",
     "language": "English"
@@ -7690,7 +7681,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Pogo_Telugu.png",
     "id": "1883",
     "group": "all",
-    "category": "Children's",
+    "category": "Kids",
     "epgid": "POGO.TELUGU.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1883&e=.m3u8",
     "language": "Telugu"
@@ -7740,10 +7731,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/News_Flash.png",
     "id": "1896",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "NEWS.FLASH.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1896&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Pulse 24",
@@ -7753,17 +7744,17 @@
     "category": "News",
     "epgid": "PULSE.24.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1897&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "GBN24",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/GBN24.png",
     "id": "1898",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "GBN24.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1898&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Express News Bharat",
@@ -7869,20 +7860,20 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sidharth_TV.png",
     "id": "1956",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "SIDHARTH.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1956&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Sidharth Gold",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sidharth_Gold.png",
     "id": "1957",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "SIDHARTH.GOLD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1957&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Sidharth Bhakti",
@@ -7892,7 +7883,7 @@
     "category": "Religious",
     "epgid": "SIDHARTH.BHAKTI.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1958&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Global India",
@@ -7949,10 +7940,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/VNM_News.png",
     "id": "1965",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "VNM.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1965&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Live TV Kerala",
@@ -7989,10 +7980,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/ETV_HD.png",
     "id": "1973",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "ETV.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1973&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Gujarat 1st 24x7",
@@ -8049,20 +8040,20 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Raftaar_Media.png",
     "id": "1999",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "RAFTAAR.MEDIA.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1999&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "PlusTest2 HD",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/PlusTest2_HD.png",
     "id": "2001",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "PLUSTEST2.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2001&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Aadinath TV",
@@ -8079,10 +8070,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Crypto_TV.0-TV.png",
     "id": "2003",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "3.0.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2003&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Shekinah TV",
@@ -8292,7 +8283,7 @@
     "category": "Religious",
     "epgid": "AARYAA.BHAKTI.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2029&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Aaryaa News",
@@ -8302,7 +8293,7 @@
     "category": "News",
     "epgid": "AARYAA.NEWS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2030&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Fashion India",
@@ -8418,7 +8409,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Auroville_TV.png",
     "id": "2045",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "AUROVILLE.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2045&e=.m3u8",
     "language": "English"
@@ -8441,7 +8432,7 @@
     "category": "Music",
     "epgid": "MERCHANT.RECORDS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2064&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Saregama Music",
@@ -8458,7 +8449,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Prime_Media.png",
     "id": "2074",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "PRIME.MEDIA.GOA.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2074&e=.m3u8",
     "language": "English"
@@ -8491,7 +8482,7 @@
     "category": "News",
     "epgid": "TV27.NEWS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2081&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "22Scope News",
@@ -8501,17 +8492,17 @@
     "category": "News",
     "epgid": "22SCOPE.NEWS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2082&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Jio Prime HD",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Jio_Prime_HD.png",
     "id": "2149",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "JIO.PRIME.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2149&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "India 24x7",
@@ -8528,20 +8519,20 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Arya_Sandesh_Tv.png",
     "id": "2177",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "ARYA.SANDESH.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2177&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Q GameX",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Q_GameX.png",
     "id": "2183",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "Q.GAMEX.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2183&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "U Bangla",
@@ -8667,20 +8658,20 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Nakshatra_Digital_TV.png",
     "id": "2253",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "NAKSHATRA.DIGITAL.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2253&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Media9",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Media9.png",
     "id": "2254",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "MEDIA9.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2254&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "RRN News",
@@ -8690,7 +8681,7 @@
     "category": "News",
     "epgid": "RRN.NEWS.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2255&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Zee Thirai",
@@ -8730,7 +8721,7 @@
     "category": "News",
     "epgid": "TTN24.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2323&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Punjabi Melodies",
@@ -8757,10 +8748,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CyberPeace_TV.png",
     "id": "2328",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "CYBERPEACE.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2328&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "SRS Bhakti TV",
@@ -8860,7 +8851,7 @@
     "category": "News",
     "epgid": "M.NADU.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2434&e=.m3u8",
-    "language": "Tamil"
+    "language": "Others"
   },
   {
     "name": "Spondon",
@@ -8900,7 +8891,7 @@
     "category": "Religious",
     "epgid": "DESIKA.DAYA.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2448&e=.m3u8",
-    "language": "Tamil"
+    "language": "Others"
   },
   {
     "name": "Jyothishavartha",
@@ -8937,10 +8928,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Popular_TV.png",
     "id": "2734",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "POPULAR.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2734&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Samachar Plus Jharkhand Bihar",
@@ -8967,10 +8958,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Power_TV.png",
     "id": "2743",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "POWER.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2743&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Saregama Telugu",
@@ -9207,7 +9198,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Power_Kids_TV.png",
     "id": "2774",
     "group": "all",
-    "category": "Children",
+    "category": "Kids",
     "epgid": "POWER.KIDS.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2774&e=.m3u8",
     "language": "English"
@@ -9277,10 +9268,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/CENTA_TV.png",
     "id": "2781",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "CENTA.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2781&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "ABC Australia",
@@ -9297,10 +9288,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Big_TV.png",
     "id": "2783",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "BIG.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2783&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "ISKCON Bangalore",
@@ -9367,10 +9358,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/KCM.png",
     "id": "2854",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "KCM.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2854&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "ICMAI-Delhi",
@@ -9396,17 +9387,17 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/BHI_Channel.png",
     "id": "2914",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "BHI.CHANNEL.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2914&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Praveg TV",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Praveg_TV.png",
     "id": "2915",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "PRAVEG.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2915&e=.m3u8",
     "language": "Hindi"
@@ -9446,10 +9437,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/99TV.png",
     "id": "2932",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "99.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2932&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "NK TV Bangla",
@@ -9536,10 +9527,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Tar_TV.png",
     "id": "2945",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "TAR.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2945&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "National News",
@@ -9585,10 +9576,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/TV45.png",
     "id": "2954",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "TV45.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2954&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Shrimad Ramayan",
@@ -9605,7 +9596,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/ETV_Plus_HD.png",
     "id": "2956",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "ETV.PLUS.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2956&e=.m3u8",
     "language": "Telugu"
@@ -9655,7 +9646,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/No_Filter_Neha.png",
     "id": "2962",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "NOFILTERNEHA.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=2962&e=.m3u8",
     "language": "Hindi"
@@ -9705,10 +9696,10 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/AMV.png",
     "id": "3007",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "AMV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=3007&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Maya Tv",
@@ -9735,7 +9726,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Lancs_TV_HD.png",
     "id": "3011",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "LANCS.TV.HD.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=3011&e=.m3u8",
     "language": "English"
@@ -9778,7 +9769,7 @@
     "category": "News",
     "epgid": "TNI24.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=3016&e=.m3u8",
-    "language": "Tamil"
+    "language": "Hindi"
   },
   {
     "name": "News Hour",
@@ -9825,20 +9816,20 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/RC_Studio.png",
     "id": "3021",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "RC.STUDIO.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=3021&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Unique Tv",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Unique_Tv.png",
     "id": "3022",
     "group": "all",
-    "category": "Unknown",
+    "category": "Others",
     "epgid": "UNIQUE.TV.IN",
     "url": "https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=3022&e=.m3u8",
-    "language": "Unknown"
+    "language": "Others"
   },
   {
     "name": "Janadesh News",
