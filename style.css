@@ -64,6 +64,23 @@ body {
   margin: 0;
  
 }
+#channelID{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nowplaying-span{
+  display: block;
+}
+
+
+
+#toggle-HD{
+  height: 50px;
+  text-align: center;
+  border-style: dashed;
+  border-radius: 20px;
+}
 
 #channel-logo{
   margin: 0;
@@ -107,7 +124,7 @@ body {
   border-style: dashed;
 }
 .collapsed {
-  background-color: #333333;
+  background: #333333;
   
  
   
@@ -167,7 +184,7 @@ body {
 #toggle{
   display: flex;
   justify-content: space-between;
-  background-color: #333333;
+ /* background-color: #333333;*/
   
 
 }
