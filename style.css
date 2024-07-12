@@ -108,8 +108,6 @@ body {
 }
 #nowplayingtag,#upcoming,#channel-logo{
   display: none;
-  
-  
 }
 #nowplayingtag,#upcoming{
   font-weight: 30px;
@@ -152,7 +150,7 @@ body {
 
 #your-scrollable-div{
   /* Set a height for the element to create scrollable content */
-  height: 120px; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
   overflow-y: auto; /* Enable vertical scrolling */
   padding: 10px;
   background-color: transparent;
@@ -194,6 +192,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   width: 130px;
+  padding: 10px;
 }
 #channel-container{
 /* flex: 0 0 25%;*/
