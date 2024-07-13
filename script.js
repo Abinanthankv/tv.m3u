@@ -4,11 +4,16 @@ var player = videojs("myVideo", {
   liveui: true,
    fill: true,
    enableSmoothSeeking: true,
+   controls: true,
+   
    controlBar: {
     skipButtons: {
       forward: 5,
-      backward: 10
+     backward: 10,
+      
     },
+   
+    
    // nativeControlsForTouch:true
   }
   // fluid: true,
@@ -18,6 +23,7 @@ player.hlsQualitySelector({
   displayCurrentQuality: true,
  // default: "highest",
 });
+
 
 
 const channelList = document.getElementById("channel-list");
@@ -33,17 +39,33 @@ const scrollableDiv = document.getElementById("your-scrollable-div");
 const tagid=document.getElementsByClassName("nowplayingtag");
 const HD=document.getElementById("toggle-HD");
 const bd=document.getElementById("body");
+const startTimeElement = document.createElement('span');
+const stopTimeElement = document.createElement('span');
+const remainingTimeElement = document.querySelector('.vjs-remaining-time-display');
+//const minusSpan = document.querySelector('span[aria-hidden="false"]');
+//console.log(minusSpan)
+//minusSpan.style.display="none";
+
+
+//console.log(remainingTimeElement)
 // Initially empty
-
-
 var activeChannel = "";
 let filteredData;
 let isShowHD = false; 
 let nowspan="";
+let  starttime="";
+let stoptime="";
+let  currtime="";
+let  rtdtime="";
+let duration="";
+var channelID="";
+
+
 
 
 
 document.addEventListener('DOMContentLoaded', function() {
+ 
 
   //console.log("loaded");
   fetch("./jio.json")
@@ -68,6 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const nowPlayingSpan = document.createElement("span");
       nowPlayingSpan.id="nowplaying-span"// Add a class for styling
       listItem.appendChild(nowPlayingSpan);
+      
+      
       listItem.addEventListener("mouseenter", () => {
         // Mute the main player
 
@@ -126,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       listItem.addEventListener("click", () => {
         const channelInfo=document.getElementById("channel-info")
+        channelID=item.id;
        channelInfo.style.display="flex";
         for (const channelItem of channelList.children) {
           channelItem.style.backgroundColor = "";
@@ -133,31 +158,42 @@ document.addEventListener('DOMContentLoaded', function() {
         // to change css style
         listItem.style.backgroundColor="lightgreen";
        // var channelData =  getChannelDataById(item.epgid);
-       var jiochannelData=getjioChannelDataById(item.id);
-        //console.log("channeldata",channelData);
-        //activeChannel = item;
-       // channelName.textContent = item.name;
-        channelLogo.src = item.logo;
+        channelLogo.src=item.logo; 
+        var jiochannelData=getjioChannelDataById(item.id);
+       // updatetime(item.id);
+        
         if (item.id != null) {
           player.pause();
+         
           player.src({
           src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
          // src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1772&e=.m3u8`,
+         //  src:"https://allinonereborn.tech/sliv/sony-pix.m3u8",
           type: 'application/x-mpegURL',
           });
           player.load();
-          player.play();
-          
-          
+          player.play();  
+          player.ready(function() {
+            console.log("ready")
+            console.log("duration",duration);
+            player.duration=function(){
+              updatetime(item.id);
+             // return player.duration();
+
+            }
+            
+            //player.play();
+          });
+          //player.ready=function(){
+            // 
+
+          //} 
         }
       });
       channelList.appendChild(listItem);
+
     }
   }
-      
-  
-
-
 fetch("./jio.json")
   .then((response) => response.json())
   .then((data) => {
@@ -295,6 +331,15 @@ fetch("./jio.json")
 // });
 }); 
 
+
+function updateRemainingTime(channelID){
+  const id1=channelID
+  console.log("yes",id1);
+ 
+  updatetime(id1);
+
+}
+
 function getChannelDataById(channelId) {
   var currentPlayingProgram = "";
   var currentPlayingPrograminfo = ""; // Initialize variable to store current program
@@ -307,8 +352,6 @@ function getChannelDataById(channelId) {
   //
   channelLogo.style.display="block";
   //
-
- 
   const currentPlaying = document.getElementById("current-playing");
   const currentPlayinginfo = document.getElementById("current-playing-info");
   const upcomingPlaying = document.getElementById("upcoming-playing"); // Add element for upcoming info (optional)
@@ -331,28 +374,16 @@ function getChannelDataById(channelId) {
         const description = channel.description;
         const channelName = channel.name;
 
-
-       
         //now playing data
         if (startTime < currentTime && currentTime < stopTime) {
           // Store the title of the current program
           if (channelName === channelId) {
             currentPlayingProgram = title;
             currentPlayingPrograminfo = description;
-           // nowspan=title;
+           
             currentPlaying.textContent = currentPlayingProgram;
             currentPlayinginfo.textContent =currentPlayingPrograminfo;
-           /* const starttimefrmtd= convertTimeToHHMM(startTime,0);
-            const completedTime = currentTime - startTime;
-            const hours = Math.floor(completedTime / 3600);
-            const minutes = Math.floor((completedTime  % 3600) / 60);
-            const seconds = Math.floor((completedTime  % 3600) % 60);
-            const formattedCompletedTime  =`${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-            
-            // Add element to display completed time (replace with your desired placement)
-            const completedTimeDisplay = document.createElement("div");
-            completedTimeDisplay.textContent = `Completed: ${starttimefrmtd}`;
-            currentPlaying.appendChild(completedTimeDisplay);*/
+        
             console.log(currentPlayingPrograminfo);
 
             if(currentPlayingProgram.length === 0 &&tagid.style.display==="block")
@@ -397,34 +428,43 @@ function getChannelDataById(channelId) {
  
 }
 
-function convertTimeToHHMM(timeString) {
 
-  // Extract year, month, day, hour, minute from the string
 
-  const year = timeString.slice(0, 4);
-  const month = timeString.slice(4, 6) - 1; // Months are 0-indexed
-  const day = timeString.slice(6, 8);
-  const hour = timeString.slice(8, 10);
-  const minute = timeString.slice(10, 12);
+function getRemainingTime(starttime, stoptime) {
+  // Split the time strings into hours and minutes
+  
+  const currentHour = parseInt(starttime.split(":")[0]);
+  const currentMinute = parseInt(starttime.split(":")[1]);
+  const stopHour = parseInt(stoptime.split(":")[0]);
+  const stopMinute = parseInt(stoptime.split(":")[1]);
 
-  // Apply timeshift in seconds
+  // Convert everything to minutes for easier calculation
+  //const currentTotalMinutes = currentHour * 60 + currentMinute;
+  //const stopTotalMinutes = stopHour * 60 + stopMinute;
+   // Calculate total time in seconds for both start and stop
+   const currentTotalSeconds = currentHour * 60 * 60 + currentMinute * 60;
+   const stopTotalSeconds = stopHour * 60 * 60 + stopMinute * 60;
+ 
 
-//  const timeshiftedTime = new Date(
- //   parseInt(timeString) 
- // );
+  // Calculate the total difference in minutes (handling negative values)
+  let difference = stopTotalSeconds - currentTotalSeconds-parseInt(player.currentTime());
+  if (difference < 0) {
+    difference += 24 * 60*60; // Add a day if the stop time is before current time
+  }
 
-  // Format the hours and minutes with leading zeros (HH:MM)
+  // Convert the difference back to hours and minutes
+  //const remainingHours = Math.floor(difference / 60);
+  //const remainingMinutes = difference % 60;
 
- // const formattedHours = timeshiftedTime.getHours().toString().padStart(2, "0");
-
- // const formattedMinutes = timeshiftedTime
-  //  .getMinutes()
-  //  .toString()
-  //  .padStart(2, "0");
-
-  return `${hour}:${minute}`;
+  // Format the remaining time as hh:mm string
+    // Calculate remaining hours, minutes, and seconds
+    const remainingHours = Math.floor(difference / 3600);
+    const remainingMinutes = Math.floor((difference % 3600) / 60);
+    const remainingSeconds = difference % 60;
+  
+    return `${String(remainingHours).padStart(2, '0')}:${String(remainingMinutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
+  //return `${String(remainingHours).padStart(2, '0')}:${String(remainingMinutes).padStart(2, '0')}`;
 }
-
 function getjioChannelDataById(channelId) {
   var currentPlayingProgram = "";
   var currentPlayingPrograminfo = ""; // Initialize variable to store current program
@@ -445,6 +485,7 @@ function getjioChannelDataById(channelId) {
   //upcomingPlaying.innerHTML = ""; // Clear upcoming info if displayed (optional)
 //  upcomingPlayinginfo.innerHTML = ""; // Clear upcoming info if displayed (optional)
   //currentPlaying.textContent= "Now Playing "
+ 
  return fetch("./prod1.json")
     .then((response) => response.json())
     .then((data) => {
@@ -467,12 +508,18 @@ function getjioChannelDataById(channelId) {
             currentPlaying.textContent = currentPlayingProgram;
             currentPlayinginfo.textContent =currentPlayingPrograminfo;
             
-            var start =convertTimeToHHMM(startTime.toString());
-            var stop =convertTimeToHHMM(stopTime.toString());
-            console.log("start",start)
-            console.log("stop",stop)
+            starttime =convertTimeToHHMM(startTime.toString());
+            stoptime =convertTimeToHHMM(stopTime.toString());
+            currtime=convertTimeToHHMM(currentTime.toString());
+           // rtdtime= getRemainingTime(currtime, stoptime)
             
-            player.currentTime(startTime); 
+          //  console.log("rtdtime",rtdtime)
+          //  console.log("start",starttime)
+          //  console.log("stop",stoptime)
+
+      
+            
+   
             
             tagid.style.display="block";
          //   upcoming.style.display="block";
@@ -504,10 +551,53 @@ function getjioChannelDataById(channelId) {
         }
       }
       return currentPlayingProgram;
-    
     });
 
  
+}
+function updatetime(channelId) {
+ 
+  console.log("hi");
+
+  fetch("./prod1.json")
+    .then((response) => response.json())
+    .then((data) => {
+      
+      for (var i = 0; i < data.length; i++) {
+        var channel = data[i];
+        const startTime = channel.start_time;
+        const stopTime = channel.stop_time;
+       const jiochannelId = channel.id;
+       var currentTime = jioepgtimeformat();
+        if (startTime < currentTime && currentTime < stopTime) {
+          if (jiochannelId=== channelId)
+            { 
+            starttime =convertTimeToHHMM(startTime.toString());
+            stoptime =convertTimeToHHMM(stopTime.toString());
+            currtime=convertTimeToHHMM(currentTime.toString());
+            rtdtime= getRemainingTime(currtime, stoptime);
+            duration=getRemainingTime(starttime,stoptime);
+            remainingTimeElement.textContent=rtdtime;
+          }
+        }
+      }
+    });
+   // const updateInterval = setInterval(updateRemainingTime(channelID), 60000);
+}
+
+function convertTimeToHHMM(timeString) {
+
+  // Extract year, month, day, hour, minute from the string
+
+  const year = timeString.slice(0, 4);
+  const month = timeString.slice(4, 6) - 1; // Months are 0-indexed
+  const day = timeString.slice(6, 8);
+  const hour = timeString.slice(8, 10);
+  const minute = timeString.slice(10, 12);
+
+
+
+  return `${hour}:${minute}`;
 }
 
 function jioepgtimeformat() {
