@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
        // var channelData =  getChannelDataById(item.epgid);
         channelLogo.src=item.logo; 
         var jiochannelData=getjioChannelDataById(item.id);
-       // updatetime(item.id);
+        updatetime(item.id);
         
         if (item.id != null) {
           player.pause();
@@ -174,20 +174,17 @@ document.addEventListener('DOMContentLoaded', function() {
           player.load();
           player.play();  
           player.ready(function() {
-            console.log("ready")
-            console.log("duration",duration);
-            player.duration=function(){
-              updatetime(item.id);
+           // console.log("ready")
+            //console.log("duration",duration);
+           /* player.duration=function(){
+             // updatetime(item.id);
              // return player.duration();
 
-            }
+            }*/
             
             //player.play();
           });
-          //player.ready=function(){
-            // 
-
-          //} 
+     
         }
       });
       channelList.appendChild(listItem);
@@ -439,17 +436,18 @@ function getRemainingTime(starttime, stoptime) {
   const stopMinute = parseInt(stoptime.split(":")[1]);
 
   // Convert everything to minutes for easier calculation
-  //const currentTotalMinutes = currentHour * 60 + currentMinute;
-  //const stopTotalMinutes = stopHour * 60 + stopMinute;
+  const currentTotalMinutes = currentHour * 60 + currentMinute;
+  const stopTotalMinutes = stopHour * 60 + stopMinute;
    // Calculate total time in seconds for both start and stop
-   const currentTotalSeconds = currentHour * 60 * 60 + currentMinute * 60;
-   const stopTotalSeconds = stopHour * 60 * 60 + stopMinute * 60;
+   //const currentTotalSeconds = currentHour * 60 * 60 + currentMinute * 60;
+  // const stopTotalSeconds = stopHour * 60 * 60 + stopMinute * 60;
  
 
   // Calculate the total difference in minutes (handling negative values)
-  let difference = stopTotalSeconds - currentTotalSeconds-parseInt(player.currentTime());
+  //let difference = stopTotalMinutes - currentTotalMinutes-parseInt(player.currentTime());
+  let difference = stopTotalMinutes - currentTotalMinutes;
   if (difference < 0) {
-    difference += 24 * 60*60; // Add a day if the stop time is before current time
+    difference += 24 * 60; // Add a day if the stop time is before current time
   }
 
   // Convert the difference back to hours and minutes
@@ -462,8 +460,8 @@ function getRemainingTime(starttime, stoptime) {
     const remainingMinutes = Math.floor((difference % 3600) / 60);
     const remainingSeconds = difference % 60;
   
-    return `${String(remainingHours).padStart(2, '0')}:${String(remainingMinutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
-  //return `${String(remainingHours).padStart(2, '0')}:${String(remainingMinutes).padStart(2, '0')}`;
+   // return `${String(remainingHours).padStart(2, '0')}:${String(remainingMinutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
+  return `${String(remainingHours).padStart(2, '0')}:${String(remainingMinutes).padStart(2, '0')}`;
 }
 function getjioChannelDataById(channelId) {
   var currentPlayingProgram = "";
@@ -576,13 +574,13 @@ function updatetime(channelId) {
             stoptime =convertTimeToHHMM(stopTime.toString());
             currtime=convertTimeToHHMM(currentTime.toString());
             rtdtime= getRemainingTime(currtime, stoptime);
-            duration=getRemainingTime(starttime,stoptime);
+           // duration=getRemainingTime(starttime,stoptime);
             remainingTimeElement.textContent=rtdtime;
           }
         }
       }
     });
-   // const updateInterval = setInterval(updateRemainingTime(channelID), 60000);
+    //const updateInterval = setInterval(updatetime(channelID), 30000);
 }
 
 function convertTimeToHHMM(timeString) {
