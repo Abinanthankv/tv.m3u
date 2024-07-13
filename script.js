@@ -19,6 +19,7 @@ var player = videojs("myVideo", {
   // fluid: true,
   // aspectRatio: '9:16'
 });
+player.mobileUi();
 player.hlsQualitySelector({
   displayCurrentQuality: true,
  // default: "highest",
@@ -163,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updatetime(item.id);
         
         if (item.id != null) {
-          player.pause();
+       
          
           player.src({
           src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
