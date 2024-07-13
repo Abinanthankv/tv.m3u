@@ -265,9 +265,23 @@ border-radius: 20px;
   font-size: 16px !important;
 }
 
-/*unwanted codes*/
+/*unwanted codes
+.vjs-control-bar,.vjs-current-time ,.vjs-time-control, .vjs-control,.vjs-progress-control, .vjs-control,.vjs-time-control,
+.vjs-time-divider,.vjs-play-control,.vjs-control,.vjs-button,.vjs-playing,.vjs-progress-holder,.vjs-slider,.vjs-slider-horizontal,
+.vjs-duration,.vjs-time-control,.vjs-control,.vjs-current-time-display{
+  display: block;
+}*/
+/*.vjs-remaining-time-display{
+  display: block;
+  color: wheat;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  font-size: 15px;
+  
+}*/
 
-
-
-
+.vjs-current-time,.vjs-time-control,.vjs-control,.vjs-current-time-display,.vjs-big-play-button{
+  display: block;
+}
 
