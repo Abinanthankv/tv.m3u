@@ -5,21 +5,18 @@ var player = videojs("myVideo", {
    fill: true,
    enableSmoothSeeking: true,
    controls: true,
-   
    controlBar: {
     skipButtons: {
       forward: 5,
-     backward: 10,
-      
-    },
+     backward: 10, 
+    }
    
-    
    // nativeControlsForTouch:true
   }
   // fluid: true,
   // aspectRatio: '9:16'
 });
-player.mobileUi();
+
 player.hlsQualitySelector({
   displayCurrentQuality: true,
  // default: "highest",
