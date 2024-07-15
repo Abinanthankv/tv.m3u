@@ -22,11 +22,11 @@ body {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-#channel-list {
-  overflow-y: scroll; /* Enable scrolling for the channel list */
-  scrollbar-width: none; /* Hide the default scrollbar (works in Chrome, Safari, and Opera) */
-  -ms-overflow-style: none; /* Hide the default scrollbar (works in Internet Explorer, Edge) */
-}
+/*#channel-list {
+  overflow-y: scroll; /* Enable scrolling for the channel list 
+  scrollbar-width: none; /* Hide the default scrollbar (works in Chrome, Safari, and Opera) 
+  -ms-overflow-style: none; /* Hide the default scrollbar (works in Internet Explorer, Edge) 
+}*/
 
 /* Channel List Section */
 
@@ -79,7 +79,7 @@ body {
   height: 50px;
   width: 120px;
   text-align: center;
-  border-style: dashed;
+  border-style: solid;
   border-radius: 20px;
 }
 
@@ -120,7 +120,7 @@ body {
   border-radius: 20px;
   height: 50px;
   text-align: center;
-  border-style: dashed;
+  border-style: solid;
 }
 .collapsed {
   background: #333333;
@@ -217,7 +217,7 @@ margin: 0; /* Remove default margin */
 padding: 0;
 height:50px;
 text-align: center;
-border-style: dashed;
+border-style: solid;
 border-radius: 20px;
 }
 
