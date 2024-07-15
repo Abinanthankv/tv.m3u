@@ -284,4 +284,19 @@ border-radius: 20px;
 /*.vjs-current-time,.vjs-time-control,.vjs-control,.vjs-current-time-display,.vjs-big-play-button{
   display: block;
 }*/
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:whitesmoke; /* Green color */
+  color: black;
+  padding: 15px;
+  border-radius: 50%;
+  opacity: 0.8; /* Semi-transparent */
+  transition: opacity 0.3s ease-in-out;
+}
+.fab:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
 
