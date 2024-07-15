@@ -9,8 +9,8 @@ var player = videojs("myVideo", {
     skipButtons: {
       forward: 5,
      backward: 10, 
-    }
-   
+    },
+  
    // nativeControlsForTouch:true
   }
   // fluid: true,
@@ -19,7 +19,7 @@ var player = videojs("myVideo", {
 
 player.hlsQualitySelector({
   displayCurrentQuality: true,
- // default: "highest",
+  //default: "highest",
 });
 
 
@@ -59,7 +59,14 @@ let duration="";
 var channelID="";
 
 
-
+window.addEventListener("scroll", function() {
+  
+  if (window.scrollY > 100) { // Hide after 100px scroll
+    channelInfo.style.display = "none";
+  } else {
+    channelInfo.style.display = "flex";
+  }
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -158,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
        // var channelData =  getChannelDataById(item.epgid);
         channelLogo.src=item.logo; 
         var jiochannelData=getjioChannelDataById(item.id);
-        updatetime(item.id);
+      //  updatetime(item.id);
         
         if (item.id != null) {
        
@@ -172,15 +179,12 @@ document.addEventListener('DOMContentLoaded', function() {
           player.load();
           player.play();  
           player.ready(function() {
-           // console.log("ready")
-            //console.log("duration",duration);
-           /* player.duration=function(){
-             // updatetime(item.id);
-             // return player.duration();
-
-            }*/
-            
-            //player.play();
+            this.hotkeys({
+              volumeStep: 0.1,
+              seekStep: 5,
+              
+            });
+           
           });
      
         }
@@ -331,7 +335,7 @@ function updateRemainingTime(channelID){
   const id1=channelID
   console.log("yes",id1);
  
-  updatetime(id1);
+ // updatetime(id1);
 
 }
 
@@ -553,7 +557,7 @@ function getjioChannelDataById(channelId) {
 }
 function updatetime(channelId) {
  
-  console.log("hi");
+ // console.log("hi");
 
   fetch("./prod1.json")
     .then((response) => response.json())
