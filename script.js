@@ -59,13 +59,21 @@ let duration="";
 var channelID="";
 
 
+let timeoutId = null;
+
 window.addEventListener("scroll", function() {
-  
-  if (window.scrollY > 100) { // Hide after 100px scroll
+  if (window.scrollY > 50) {  // Hide after 100px scroll
     channelInfo.style.display = "none";
   } else {
     channelInfo.style.display = "flex";
+    channelInfo.style.behavior= 'smooth'
   }
+});
+
+const scrollToTopButton = document.getElementById('scroll-to-top');
+
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 
@@ -95,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const nowPlayingSpan = document.createElement("span");
       nowPlayingSpan.id="nowplaying-span"// Add a class for styling
       listItem.appendChild(nowPlayingSpan);
-      
+
       
       listItem.addEventListener("mouseenter", () => {
         // Mute the main player
@@ -154,8 +162,9 @@ document.addEventListener('DOMContentLoaded', function() {
       });*/
 
       listItem.addEventListener("click", () => {
-        const channelInfo=document.getElementById("channel-info")
+        const channelInfo=document.getElementById("channel-info");
         channelID=item.id;
+      
        channelInfo.style.display="flex";
         for (const channelItem of channelList.children) {
           channelItem.style.backgroundColor = "";
@@ -353,13 +362,13 @@ function getChannelDataById(channelId) {
   //
   const currentPlaying = document.getElementById("current-playing");
   const currentPlayinginfo = document.getElementById("current-playing-info");
-  const upcomingPlaying = document.getElementById("upcoming-playing"); // Add element for upcoming info (optional)
-  const upcomingPlayinginfo = document.getElementById("upcoming-playing-info"); // Add element for upcoming info (optional)
+ // const upcomingPlaying = document.getElementById("upcoming-playing"); // Add element for upcoming info (optional)
+ // const upcomingPlayinginfo = document.getElementById("upcoming-playing-info"); // Add element for upcoming info (optional)
   var currentTime = getTimeshiftedCurrentTime(19800);
   currentPlaying.innerHTML = "";
   currentPlayinginfo.innerHTML = "";
-  upcomingPlaying.innerHTML = ""; // Clear upcoming info if displayed (optional)
-  upcomingPlayinginfo.innerHTML = ""; // Clear upcoming info if displayed (optional)
+  //upcomingPlaying.innerHTML = ""; // Clear upcoming info if displayed (optional)
+  //upcomingPlayinginfo.innerHTML = ""; // Clear upcoming info if displayed (optional)
   //currentPlaying.textContent= "Now Playing "
  return fetch("./prod.json")
     .then((response) => response.json())
@@ -400,7 +409,8 @@ function getChannelDataById(channelId) {
              foundCurrentProgram = true;
           }
           // Stop iterating after finding the current program
-        } else if (startTime > currentTime && programLimit > 0) {
+        } 
+        /*else if (startTime > currentTime && programLimit > 0) {
         
 
           if (channelName === channelId) {
@@ -415,7 +425,7 @@ function getChannelDataById(channelId) {
 
             programLimit--;
           }
-        }
+        }*/
         if (foundCurrentProgram) {
           break;
         }
