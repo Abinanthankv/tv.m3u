@@ -180,9 +180,10 @@ document.addEventListener('DOMContentLoaded', function() {
        
          
           player.src({
-          src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
+        //  src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
          // src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1772&e=.m3u8`,
          //  src:"https://allinonereborn.tech/sliv/sony-pix.m3u8",
+            src: `https://large-tribes-with-db.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
           type: 'application/x-mpegURL',
           });
           player.load();
