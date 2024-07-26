@@ -10,9 +10,10 @@ var player = videojs("myVideo", {
       forward: 5,
      backward: 10, 
     },
-  
+    
    // nativeControlsForTouch:true
   }
+
   // fluid: true,
   // aspectRatio: '9:16'
 });
@@ -21,7 +22,6 @@ player.hlsQualitySelector({
   displayCurrentQuality: true,
   //default: "highest",
 });
-
 
 
 const channelList = document.getElementById("channel-list");
@@ -40,6 +40,7 @@ const bd=document.getElementById("body");
 const startTimeElement = document.createElement('span');
 const stopTimeElement = document.createElement('span');
 const remainingTimeElement = document.querySelector('.vjs-remaining-time-display');
+const scrollfab=document.querySelector('.fab');
 //const minusSpan = document.querySelector('span[aria-hidden="false"]');
 //console.log(minusSpan)
 //minusSpan.style.display="none";
@@ -62,9 +63,12 @@ var channelID="";
 let timeoutId = null;
 
 window.addEventListener("scroll", function() {
-  if (window.scrollY > 50) {  // Hide after 100px scroll
+  if (window.scrollY > 90) {  // Hide after 100px scroll
     channelInfo.style.display = "none";
+    scrollfab.style.display="block";
+
   } else {
+    scrollfab.style.display="none";
     channelInfo.style.display = "flex";
     channelInfo.style.behavior= 'smooth'
   }
@@ -81,14 +85,13 @@ document.addEventListener('DOMContentLoaded', function() {
  
 
   //console.log("loaded");
-  fetch("./jio.json")
+  fetch("./jio2.json")
   .then((response) => response.json())
   .then((data) => {
         filtereditemlist(data);
   });
   function filtereditemlist(filteredData) {
     
- 
     channelList.innerHTML = "";
     // to sort channel list alphabetically
     filteredData.sort((a, b) => a.name.localeCompare(b.name)).forEach((item) => {
@@ -177,16 +180,21 @@ document.addEventListener('DOMContentLoaded', function() {
       //  updatetime(item.id);
         
         if (item.id != null) {
+
+      
        
-         
-          player.src({
-          src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
+      
+         player.src({
+        //  src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
          // src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1772&e=.m3u8`,
-         //  src:"https://allinonereborn.tech/sliv/sony-pix.m3u8",
-         // src:"https://large-tribes-with-db.trycloudflare.com/app/live.php?id=290&e=.m3u",
-          type: 'application/x-mpegURL',
-       //  type: 'application/vnd.apple.mpegURL'
+         // src:"http://170.254.18.106/HBO2/index.m3u8",
+         //src:"http://allinonereborn.tech/allinone.php?id=56783",
+         // type: 'application/x-mpegURL',
+        // src:"https://jiotvmblive.cdn.jio.com/bpk-tv/KTV_HD_MOB/Fallback/KTV_HD_MOB-audio_98836_eng=98800-video=2293600.m3u8?minrate=80000&maxrate=3024000&__hdnea__=st=1721823784~exp=1721827384~acl=/bpk-tv/KTV_HD_MOB/Fallback/*~hmac=fd4589760e4350be64f2f19b3c5eb7e1314b7b79c68cd9754f1eca58af1c2b0c",
+        src:item.url,
+        type: 'application/vnd.apple.mpegURL'
           });
+        
           player.load();
           player.play();  
           player.ready(function() {
@@ -199,12 +207,13 @@ document.addEventListener('DOMContentLoaded', function() {
           });
      
         }
+      
       });
       channelList.appendChild(listItem);
 
     }
   }
-fetch("./jio.json")
+fetch("./jio2.json")
   .then((response) => response.json())
   .then((data) => {
     // Extract unique groups (languages) and categories from your JSON data
@@ -372,7 +381,7 @@ function getChannelDataById(channelId) {
   //upcomingPlaying.innerHTML = ""; // Clear upcoming info if displayed (optional)
   //upcomingPlayinginfo.innerHTML = ""; // Clear upcoming info if displayed (optional)
   //currentPlaying.textContent= "Now Playing "
- return fetch("./prod.json")
+ return fetch("./prod1.json")
     .then((response) => response.json())
     .then((data) => {
       let foundCurrentProgram = false;
