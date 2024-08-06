@@ -62,16 +62,19 @@ var channelID="";
 
 let timeoutId = null;
 
-function detectBrowser() {
+function detectBrowserAndDeviceType() {
   const userAgent = navigator.userAgent;
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);  
+
+
   if (userAgent.indexOf("Chrome") !== -1 || userAgent.indexOf("Chromium") !== -1) {
-    return "Chrome";
+    return isMobile ? "Chrome Mobile" : "Chrome Desktop";
   } else if (userAgent.indexOf("Firefox") !== -1) {
-    return "Firefox";
+    return isMobile ? "Firefox Mobile" : "Firefox Desktop";
   } else if (userAgent.indexOf("Safari") !== -1) {
-    return "Safari";
+    return isMobile ? "Safari Mobile" : "Safari Desktop";
   } else {
-    return "Unknown";
+    return isMobile ? "Unknown Mobile" : "Unknown Desktop";
   }
 }
 /*function notifyAndRedirect() {
@@ -99,17 +102,23 @@ function detectBrowser() {
   }
 }*/
 function notifyUserForCorsExtension() {
-  const browser = detectBrowser();
+  const browser = detectBrowserAndDeviceType();
   let extensionUrl;
 
   switch (browser) {
-    case "Chrome":
-      extensionUrl = "https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en";
-      break;
-    case "Firefox":
+    case "Chrome Mobile":
+      alert("We're sorry, but CORS extensions are not currently supported on Chrome mobile. You can try accessing this content on a desktop browser or consider using Firefox Mobile, which offers CORS extension support.");
+      return; // Exit the function after displaying the message
+    case "Firefox Mobile":
+    case "Firefox Desktop":
       extensionUrl = "https://addons.mozilla.org/en-US/firefox/addon/access-control-allow-origin/";
       break;
-    case "Safari":
+    case "Chrome":
+    case "Chrome Desktop":
+      extensionUrl = "https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en";
+      break;
+    case "Safari Mobile":
+    case "Safari Desktop":
       // Safari App Store link if available
       extensionUrl = "";
       break;
@@ -117,15 +126,13 @@ function notifyUserForCorsExtension() {
       alert("Unsupported browser");
       return;
   }
-  const hasSeenMessage = localStorage.getItem('corsExtensionMessageShown');
+
+  const hasSeenMessage = sessionStorage.getItem('corsExtensionMessageShown');
   //hasSeenMessage='false';
   if (!hasSeenMessage) {
     const message = `You need to install a CORS extension to access this content. You can find extensions for your browser here:`;
-    if (confirm("You need to install a CORS extension to access this content. Click OK to install.")) {
-      window.open(extensionUrl, "_blank");
-      localStorage.setItem('corsExtensionMessageShown', 'true');
-    }
-    //alert(`${message} \n ${extensionUrl}`);
+    alert(`${message} \n ${extensionUrl}`);
+    sessionStorage.setItem('corsExtensionMessageShown', 'true');
     //localStorage.setItem('corsExtensionMessageShown', 'true');
   }
 }
@@ -149,7 +156,7 @@ scrollToTopButton.addEventListener('click', () => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  notifyUserForCorsExtension();
+  
  // notifyAndRedirect();
   //console.log("loaded");
   fetch("./jio2.json")
@@ -232,6 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });*/
 
       listItem.addEventListener("click", () => {
+        notifyUserForCorsExtension();
         const channelInfo=document.getElementById("channel-info");
         channelID=item.id;
       
