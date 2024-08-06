@@ -62,6 +62,73 @@ var channelID="";
 
 let timeoutId = null;
 
+function detectBrowser() {
+  const userAgent = navigator.userAgent;
+  if (userAgent.indexOf("Chrome") !== -1 || userAgent.indexOf("Chromium") !== -1) {
+    return "Chrome";
+  } else if (userAgent.indexOf("Firefox") !== -1) {
+    return "Firefox";
+  } else if (userAgent.indexOf("Safari") !== -1) {
+    return "Safari";
+  } else {
+    return "Unknown";
+  }
+}
+/*function notifyAndRedirect() {
+  const browser = detectBrowser();
+  let extensionUrl;
+
+  switch (browser) {
+    case "Chrome":
+      extensionUrl = "https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en";
+      break;
+    case "Firefox":
+      extensionUrl = "https://addons.mozilla.org/en-US/firefox/addon/access-control-allow-origin/";
+      break;
+    case "Safari":
+      // Safari App Store link if available
+      extensionUrl = "";
+      break;
+    default:
+      alert("Unsupported browser");
+      return;
+  }
+
+  if (confirm("You need to install a CORS extension to access this content. Click OK to install.")) {
+    window.open(extensionUrl, "_blank");
+  }
+}*/
+function notifyUserForCorsExtension() {
+  const browser = detectBrowser();
+  let extensionUrl;
+
+  switch (browser) {
+    case "Chrome":
+      extensionUrl = "https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en";
+      break;
+    case "Firefox":
+      extensionUrl = "https://addons.mozilla.org/en-US/firefox/addon/access-control-allow-origin/";
+      break;
+    case "Safari":
+      // Safari App Store link if available
+      extensionUrl = "";
+      break;
+    default:
+      alert("Unsupported browser");
+      return;
+  }
+  const hasSeenMessage = localStorage.getItem('corsExtensionMessageShown');
+  //hasSeenMessage='false';
+  if (!hasSeenMessage) {
+    const message = `You need to install a CORS extension to access this content. You can find extensions for your browser here:`;
+    if (confirm("You need to install a CORS extension to access this content. Click OK to install.")) {
+      window.open(extensionUrl, "_blank");
+      localStorage.setItem('corsExtensionMessageShown', 'true');
+    }
+    //alert(`${message} \n ${extensionUrl}`);
+    //localStorage.setItem('corsExtensionMessageShown', 'true');
+  }
+}
 window.addEventListener("scroll", function() {
   if (window.scrollY > 90) {  // Hide after 100px scroll
     channelInfo.style.display = "none";
@@ -82,10 +149,10 @@ scrollToTopButton.addEventListener('click', () => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
- 
-
+  notifyUserForCorsExtension();
+ // notifyAndRedirect();
   //console.log("loaded");
-  fetch("./jio2.json")
+  fetch("./jio5.json")
   .then((response) => response.json())
   .then((data) => {
         filtereditemlist(data);
@@ -179,21 +246,15 @@ document.addEventListener('DOMContentLoaded', function() {
         var jiochannelData=getjioChannelDataById(item.id);
       //  updatetime(item.id);
         
-        if (item.id != null) {
 
+        
+        if (item.id != null) {
+    
       
-       
-      
+          
          player.src({
-        //  src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
-         // src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1772&e=.m3u8`,
-         // src:"http://170.254.18.106/HBO2/index.m3u8",
-         //src:"http://allinonereborn.tech/allinone.php?id=56783",
-         
-        // src:"https://jiotvmblive.cdn.jio.com/bpk-tv/KTV_HD_MOB/Fallback/KTV_HD_MOB-audio_98836_eng=98800-video=2293600.m3u8?minrate=80000&maxrate=3024000&__hdnea__=st=1721823784~exp=1721827384~acl=/bpk-tv/KTV_HD_MOB/Fallback/*~hmac=fd4589760e4350be64f2f19b3c5eb7e1314b7b79c68cd9754f1eca58af1c2b0c",
-       // src:item.url,
-           src:`https://fuji-reduction-euro-affects.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
-       // src:"https://approved-from-warrior-proposal.trycloudflare.com/app/live.php?id=144&e=.m3u",
+    
+      src:`https://fuji-reduction-euro-affects.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
        // type: 'application/x-mpegURL',
         type: 'application/vnd.apple.mpegURL'
 
@@ -217,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
   }
-fetch("./jio2.json")
+fetch("./merged_data.json")
   .then((response) => response.json())
   .then((data) => {
     // Extract unique groups (languages) and categories from your JSON data
