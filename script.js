@@ -108,6 +108,7 @@ function notifyUserForCorsExtension() {
   switch (browser) {
     case "Chrome Mobile":
       alert("We're sorry, but CORS extensions are not currently supported on Chrome mobile. You can try accessing this content on a desktop browser or consider using Firefox Mobile, which offers CORS extension support.");
+       player.pause();
       return; // Exit the function after displaying the message
     case "Firefox Mobile":
     case "Firefox Desktop":
