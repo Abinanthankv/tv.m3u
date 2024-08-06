@@ -8379,16 +8379,7 @@
         "epgid": "AADINATH.TV.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/"
     },
-    {
-        "name": "3.0 TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Crypto_TV.0-TV",
-        "id": "2003",
-        "category": "Educational",
-        "language": "English",
-        "epgid": "3.0.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Crypto_TV.0-TV"
-    },
+   
     {
         "name": "Shekinah TV",
         "group": "SD",
