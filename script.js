@@ -32,7 +32,7 @@ const filterLanguage = document.getElementById("language-filter");
 const filterCategory = document.getElementById("channel-filter");
 const channelInfo=document.getElementById("channel-info")
 
-
+const videodata=document.getElementById("video-container");
 const scrollableDiv = document.getElementById("your-scrollable-div");
 const tagid=document.getElementsByClassName("nowplayingtag");
 const HD=document.getElementById("toggle-HD");
@@ -239,6 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });*/
 
       listItem.addEventListener("click", () => {
+        videodata.style.display="block"; 
         notifyUserForCorsExtension();
         const channelInfo=document.getElementById("channel-info");
         channelID=item.id;
