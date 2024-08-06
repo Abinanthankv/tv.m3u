@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
 
         
-        if (item.id != null && hasSeenMessage==='true') {
+        if (item.id != null && hasSeenMessage) {
     
       
           
