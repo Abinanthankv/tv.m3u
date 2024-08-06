@@ -191,7 +191,8 @@ document.addEventListener('DOMContentLoaded', function() {
          //src:"http://allinonereborn.tech/allinone.php?id=56783",
          
         // src:"https://jiotvmblive.cdn.jio.com/bpk-tv/KTV_HD_MOB/Fallback/KTV_HD_MOB-audio_98836_eng=98800-video=2293600.m3u8?minrate=80000&maxrate=3024000&__hdnea__=st=1721823784~exp=1721827384~acl=/bpk-tv/KTV_HD_MOB/Fallback/*~hmac=fd4589760e4350be64f2f19b3c5eb7e1314b7b79c68cd9754f1eca58af1c2b0c",
-        src:item.url,
+       // src:item.url,
+           src:`https://fuji-reduction-euro-affects.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
        // src:"https://approved-from-warrior-proposal.trycloudflare.com/app/live.php?id=144&e=.m3u",
        // type: 'application/x-mpegURL',
         type: 'application/vnd.apple.mpegURL'
