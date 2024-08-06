@@ -187,6 +187,9 @@ body {
   
 
 }
+#video-container{
+  display: none;
+}
 .info{
   display: flex;
   flex-direction: column;
@@ -285,6 +288,7 @@ border-radius: 20px;
   display: block;
 }*/
 .fab {
+  display:none;
   position: fixed;
   bottom: 20px;
   right: 20px;
