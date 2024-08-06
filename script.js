@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
   notifyUserForCorsExtension();
  // notifyAndRedirect();
   //console.log("loaded");
-  fetch("./jio5.json")
+  fetch("./jio2.json")
   .then((response) => response.json())
   .then((data) => {
         filtereditemlist(data);
@@ -253,7 +253,21 @@ document.addEventListener('DOMContentLoaded', function() {
       
           
          player.src({
-    
+        //  src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
+         // src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1772&e=.m3u8`,
+         // src:"http://170.254.18.106/HBO2/index.m3u8",
+         //src:"http://allinonereborn.tech/allinone.php?id=56783",
+         
+        // src:"https://jiotvmblive.cdn.jio.com/bpk-tv/KTV_HD_MOB/Fallback/KTV_HD_MOB-audio_98836_eng=98800-video=2293600.m3u8?minrate=80000&maxrate=3024000&__hdnea__=st=1721823784~exp=1721827384~acl=/bpk-tv/KTV_HD_MOB/Fallback/*~hmac=fd4589760e4350be64f2f19b3c5eb7e1314b7b79c68cd9754f1eca58af1c2b0c",
+       // src:item.url,
+     // src:`http://127.0.0.1:5001/live/${item.id}.m3u8`,
+      
+    // src:`https://allinonereborn.in/sliv.m3u8?ch=PIXHD&id=2011748`,
+     //src:`https://allinonereborn.com/test/tatatv.php?id=2665`,
+      // src:`https://allinonereborn.com/jiobe1125.m3u8/?id=1477`,
+     
+     // src:`https://allinonereborn.com/livetv-web/live.php?id=${item.jiobeid}&vtoken=&e=.m3u8`,
+       // src:"https://approved-from-warrior-proposal.trycloudflare.com/app/live.php?id=144&e=.m3u",
       src:`https://fuji-reduction-euro-affects.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
        // type: 'application/x-mpegURL',
         type: 'application/vnd.apple.mpegURL'
@@ -278,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
   }
-fetch("./merged_data.json")
+fetch("./jio2.json")
   .then((response) => response.json())
   .then((data) => {
     // Extract unique groups (languages) and categories from your JSON data
