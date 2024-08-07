@@ -266,8 +266,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (item.id != "") {
          player.src({
       src:`https://fuji-reduction-euro-affects.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
-       type: 'application/x-mpegURL',
-       // type: 'application/vnd.apple.mpegURL'
+       //type: 'application/x-mpegURL',
+        type: 'application/vnd.apple.mpegURL'
          });
           player.load();
           player.play();  
@@ -276,8 +276,8 @@ document.addEventListener('DOMContentLoaded', function() {
         else{
           player.src({
             src:item.url,
-             type: 'application/x-mpegURL',
-             // type: 'application/vnd.apple.mpegURL'
+             //type: 'application/x-mpegURL',
+              type: 'application/vnd.apple.mpegURL'
                });
                 player.load();
                 player.play(); 
