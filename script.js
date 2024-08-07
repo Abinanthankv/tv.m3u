@@ -58,6 +58,9 @@ let  currtime="";
 let  rtdtime="";
 let duration="";
 var channelID="";
+var currentPlayingProgram = "";
+var currentPlayingPrograminfo = "";
+
 
 
 let timeoutId = null;
@@ -108,7 +111,7 @@ function notifyUserForCorsExtension() {
   switch (browser) {
     case "Chrome Mobile":
       alert("We're sorry, but CORS extensions are not currently supported on Chrome mobile. You can try accessing this content on a desktop browser or consider using Firefox Mobile, which offers CORS extension support.");
-      
+     
       return; // Exit the function after displaying the message
     case "Firefox Mobile":
     case "Firefox Desktop":
@@ -179,11 +182,17 @@ document.addEventListener('DOMContentLoaded', function() {
       listItem.textContent = item.name;
       listItem.insertAdjacentHTML("beforeend", `<img src="${item.logo}">`);
       const nowPlayingSpan = document.createElement("span");
+      
       nowPlayingSpan.id="nowplaying-span"// Add a class for styling
       listItem.appendChild(nowPlayingSpan);
-
+    
       
       listItem.addEventListener("mouseenter", () => {
+       /* getjioChannelDataById(item.id)
+        .then(function(data) {
+         nowPlayingSpan.textContent=data;
+    // Use the retrieved data (e.g., display it on the webpage)
+        });*/
         // Mute the main player
 
         // player.muted(true);
@@ -193,11 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // channelName.textContent = item.name;
 
      //   var channelData = getChannelDataById(item.epgid);
-     //getChannelDataById(item.epgid)
-    // .then(function(data) {
-     //  nowPlayingSpan.textContent=data;
- // Use the retrieved data (e.g., display it on the webpage)
-    // });
+     
      
 
        // channelLogo.src = item.logo;
@@ -256,45 +261,27 @@ document.addEventListener('DOMContentLoaded', function() {
         var jiochannelData=getjioChannelDataById(item.id);
       //  updatetime(item.id);
         
-
-        
-        if (item.id != null) {
-    
-      
-          
-         player.src({
-        //  src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=${item.id}&e=.m3u8`,
-         // src: `https://fifaxbd.fun/JIOxRANAPK/stream.m3u8?id=1772&e=.m3u8`,
-         // src:"http://170.254.18.106/HBO2/index.m3u8",
-         //src:"http://allinonereborn.tech/allinone.php?id=56783",
-         
-        // src:"https://jiotvmblive.cdn.jio.com/bpk-tv/KTV_HD_MOB/Fallback/KTV_HD_MOB-audio_98836_eng=98800-video=2293600.m3u8?minrate=80000&maxrate=3024000&__hdnea__=st=1721823784~exp=1721827384~acl=/bpk-tv/KTV_HD_MOB/Fallback/*~hmac=fd4589760e4350be64f2f19b3c5eb7e1314b7b79c68cd9754f1eca58af1c2b0c",
-       // src:item.url,
-     // src:`http://127.0.0.1:5001/live/${item.id}.m3u8`,
-      
-    // src:`https://allinonereborn.in/sliv.m3u8?ch=PIXHD&id=2011748`,
-     //src:`https://allinonereborn.com/test/tatatv.php?id=2665`,
-      // src:`https://allinonereborn.com/jiobe1125.m3u8/?id=1477`,
      
-     // src:`https://allinonereborn.com/livetv-web/live.php?id=${item.jiobeid}&vtoken=&e=.m3u8`,
-       // src:"https://approved-from-warrior-proposal.trycloudflare.com/app/live.php?id=144&e=.m3u",
-      src:`https://fuji-reduction-euro-affects.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
-       // type: 'application/x-mpegURL',
-        type: 'application/vnd.apple.mpegURL'
-
-          });
         
+        if (item.id != "") {
+         player.src({
+      src:`https://fuji-reduction-euro-affects.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
+       type: 'application/x-mpegURL',
+       // type: 'application/vnd.apple.mpegURL'
+         });
           player.load();
           player.play();  
-          player.ready(function() {
-            this.hotkeys({
-              volumeStep: 0.1,
-              seekStep: 5,
-              
-            });
-           
-          });
      
+        }
+        else{
+          player.src({
+            src:item.url,
+             type: 'application/x-mpegURL',
+             // type: 'application/vnd.apple.mpegURL'
+               });
+                player.load();
+                player.play(); 
+
         }
       
       });
@@ -449,8 +436,7 @@ function updateRemainingTime(channelID){
 }
 
 function getChannelDataById(channelId) {
-  var currentPlayingProgram = "";
-  var currentPlayingPrograminfo = ""; // Initialize variable to store current program
+   // Initialize variable to store current program
   var upcomingProgram = "";
   var upcomingPrograminfo = "";
   var programLimit = 1;
@@ -492,20 +478,17 @@ function getChannelDataById(channelId) {
             currentPlaying.textContent = currentPlayingProgram;
             currentPlayinginfo.textContent =currentPlayingPrograminfo;
         
-            console.log(currentPlayingPrograminfo);
+            //console.log(currentPlayingPrograminfo);
 
             if(currentPlayingProgram.length === 0 &&tagid.style.display==="block")
               {
                 channelInfo.style.display="none";
                 upcoming.style.display="none";
-                
               }
               else{
                 tagid.style.display="block";
                 upcoming.style.display="block";
-
               }
-              
              foundCurrentProgram = true;
           }
           // Stop iterating after finding the current program
@@ -533,45 +516,36 @@ function getChannelDataById(channelId) {
       return currentPlayingProgram;
     
     });
-
- 
 }
 
 
 
 function getRemainingTime(starttime, stoptime) {
   // Split the time strings into hours and minutes
-  
   const currentHour = parseInt(starttime.split(":")[0]);
   const currentMinute = parseInt(starttime.split(":")[1]);
   const stopHour = parseInt(stoptime.split(":")[0]);
   const stopMinute = parseInt(stoptime.split(":")[1]);
-
   // Convert everything to minutes for easier calculation
   const currentTotalMinutes = currentHour * 60 + currentMinute;
   const stopTotalMinutes = stopHour * 60 + stopMinute;
    // Calculate total time in seconds for both start and stop
    //const currentTotalSeconds = currentHour * 60 * 60 + currentMinute * 60;
   // const stopTotalSeconds = stopHour * 60 * 60 + stopMinute * 60;
- 
-
   // Calculate the total difference in minutes (handling negative values)
   //let difference = stopTotalMinutes - currentTotalMinutes-parseInt(player.currentTime());
   let difference = stopTotalMinutes - currentTotalMinutes;
   if (difference < 0) {
     difference += 24 * 60; // Add a day if the stop time is before current time
   }
-
   // Convert the difference back to hours and minutes
   //const remainingHours = Math.floor(difference / 60);
   //const remainingMinutes = difference % 60;
-
   // Format the remaining time as hh:mm string
     // Calculate remaining hours, minutes, and seconds
     const remainingHours = Math.floor(difference / 3600);
     const remainingMinutes = Math.floor((difference % 3600) / 60);
     const remainingSeconds = difference % 60;
-  
    // return `${String(remainingHours).padStart(2, '0')}:${String(remainingMinutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
   return `${String(remainingHours).padStart(2, '0')}:${String(remainingMinutes).padStart(2, '0')}`;
 }
@@ -698,7 +672,6 @@ function updatetime(channelId) {
 function convertTimeToHHMM(timeString) {
 
   // Extract year, month, day, hour, minute from the string
-
   const year = timeString.slice(0, 4);
   const month = timeString.slice(4, 6) - 1; // Months are 0-indexed
   const day = timeString.slice(6, 8);
@@ -777,14 +750,17 @@ function getTimeshiftedCurrentTime(timeShiftSeconds) {
 //unwanted codes
 const toggleButton = document.getElementById("toggle-list-size");
 const channelid=document.getElementById("channel-list");
+const nowinfo=document.getElementById("nowplaying-span")
 let isListExpanded = true; // Initial state (list starts expanded)
 toggleButton.addEventListener("click", function() {
   if (isListExpanded) {
     // Collapse the list
     channelid.classList.add("collapsed");
     toggleButton.textContent = "collapse List";
+    console.log(currentPlayingProgram);
+    nowinfo.textContent="hello";
    // nowinfo.textContent="block";
- //   nowinfo.style.display="block";
+    nowinfo.style.display="block";
    // bd.style.background="#333333";
   } else {
     // Expand the list
