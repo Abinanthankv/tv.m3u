@@ -5449,16 +5449,7 @@
         "epgid": "AASTHA.TELUGU.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Aastha_Telugu_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Aastha Tamil",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Aastha_Tamil.png",
-        "id": "1255",
-        "category": "Devotional",
-        "language": "Tamil",
-        "epgid": "AASTHA.TAMIL.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Aastha_Tamil_MOB/Fallback/index.m3u8"
-    },
+
     {
         "name": "Aastha Kannada",
         "group": "SD",
@@ -8369,18 +8360,7 @@
         "epgid": "PLUSTEST2.HD.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/PlusTest2_HD_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Aadinath TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/",
-        "id": "2002",
-        "category": "Devotional",
-        "language": "Gujarati",
-        "epgid": "AADINATH.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/"
-    },
    
-    
     {
         "name": "News 21",
         "group": "SD",
@@ -10033,6 +10013,7 @@
         "language": "English",
         "url": "https://allinonereborn.com/livetv-web/live.php?id=131&vtoken=&e=.m3u8"
     },
+
     {
         "name": "STAR MOVIES  HD",
         "group": "HD",
@@ -10059,7 +10040,27 @@
         "category": "Movies",
         "language": "English",
         "url": "https://allinonereborn.com/livetv-web/live.php?id=1480&vtoken=&e=.m3u8"
+    },
+    {
+        "name": "HBO FAMILY HD",
+        "group": "HD",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3a/HBO_Family_logo.png?20101220234026",
+        "id": "",
+        "category": "Movies",
+        "language": "English",
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=13561&vtoken=&e=.m3u8"
+    },
+    {
+        "name": " STAR VIJAY  HD",
+        "group": "HD",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/53/Star_Vijay_logo_2023.png?20230831120956",
+        "id": "",
+        "category": "STAR CHANNELS",
+        "language": "Tamil",
+        "url": "https://yuvraj43.xyz/web/manifest.php?id=496"
     }
+
+    
    
    
 ]
