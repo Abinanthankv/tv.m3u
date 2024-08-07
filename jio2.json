@@ -8380,36 +8380,7 @@
         "url": "https://jio.drmlive.au/jio/bpk-tv/"
     },
    
-    {
-        "name": "Shekinah TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Shekinah.png",
-        "id": "2004",
-        "category": "News",
-        "language": "Malayalam",
-        "epgid": "SHEKINAH.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Shekinah_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "IN 24 News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Virat_24.png",
-        "id": "2005",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "IN.24.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Virat_24_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "BS9 News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/BS9_News.png",
-        "id": "2007",
-        "category": "News",
-        "language": "Gujarati",
-        "epgid": "BS9.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/BS9_News_MOB/Fallback/index.m3u8"
-    },
+    
     {
         "name": "News 21",
         "group": "SD",
@@ -8420,46 +8391,7 @@
         "epgid": "NEWS.21.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/News_21_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Ekamra Nilach akra",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Ekamra_Nilach_akra.png",
-        "id": "2010",
-        "category": "Entertainment",
-        "language": "Odia",
-        "epgid": "EKAMRA.NILACH.AKRA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Ekamra_Nilach_akra_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Ekamra Bharat Odia",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Ekamra_Bharat_Odia.png",
-        "id": "2011",
-        "category": "Infotainment",
-        "language": "Odia",
-        "epgid": "EKAMRA.BHARAT.ODIA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Ekamra_Bharat_Odia_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Paramatma",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Paramatma.png",
-        "id": "2012",
-        "category": "Devotional",
-        "language": "Odia",
-        "epgid": "PARAMATMA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Paramatma_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Leaking Top Secret",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Ekamra_S_News.png",
-        "id": "2013",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "LEAKING.TOP.SECRET.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Ekamra_S_News_MOB/Fallback/index.m3u8"
-    },
+   
     {
         "name": "News India TV",
         "group": "SD",
@@ -8470,86 +8402,7 @@
         "epgid": "NEWS.INDIA.TV.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Rajpath_TV_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Ekamra Musiq",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Ekamra_Music.png",
-        "id": "2015",
-        "category": "Music",
-        "language": "Odia",
-        "epgid": "EKAMRA.MUSIQ.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Ekamra_Music_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Ekamra Cinema",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Ekamra_Cinema.png",
-        "id": "2016",
-        "category": "Movies",
-        "language": "Odia",
-        "epgid": "EKAMRA.CINEMA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Ekamra_Cinema_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Munsif TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Munsif_TV.png",
-        "id": "2017",
-        "category": "News",
-        "language": "Urdu",
-        "epgid": "MUNSIF.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Munsif_TV_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Samachar Nation",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Samachar_Nation.png",
-        "id": "2018",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "SAMACHAR.NATION.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Samachar_Nation_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Global Punjab",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Global_Punjab.png",
-        "id": "2019",
-        "category": "News",
-        "language": "Punjabi",
-        "epgid": "GLOBAL.PUNJAB.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Global_Punjab_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "KKD News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/KKD_News.png",
-        "id": "2020",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "KKD.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/KKD_News_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "HNN 24x7",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/HNN24x7.png",
-        "id": "2021",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "HNN.24X7.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/HNN24x7_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "NB News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/NB_News.png",
-        "id": "2022",
-        "category": "News",
-        "language": "Assamese",
-        "epgid": "NB.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/NB_News_MOB/Fallback/index.m3u8"
-    },
+    
     {
         "name": "And TV",
         "group": "SD",
@@ -8581,16 +8434,6 @@
         "url": "https://jio.drmlive.au/jio/bpk-tv/Sadvidya_TV_MOB/Fallback/index.m3u8"
     },
     {
-        "name": "Aaryaa Bhakti",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Aaryaa_Bhakti.png",
-        "id": "2029",
-        "category": "Devotional",
-        "language": "Hindi",
-        "epgid": "AARYAA.BHAKTI.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Aaryaa_Bhakti_MOB/Fallback/index.m3u8"
-    },
-    {
         "name": "Aaryaa News",
         "group": "SD",
         "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Aaryaa_News.png",
@@ -8620,26 +8463,8 @@
         "epgid": "NSDC.TV.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/NSDC_TV_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Amritwani",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Amritwani.png",
-        "id": "2035",
-        "category": "Devotional",
-        "language": "Punjabi",
-        "epgid": "AMRITWANI.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Amritwani_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Dil Se",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Dil_Se.png",
-        "id": "2036",
-        "category": "Music",
-        "language": "Hindi",
-        "epgid": "DIL.SE.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Dil_Se_MOB/Fallback/index.m3u8"
-    },
+  
+    
     {
         "name": "Pop Pataka",
         "group": "SD",
@@ -8740,26 +8565,7 @@
         "epgid": "MERCHANT.RECORDS.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Merchant_Records_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Saregama Music",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Saregama_Music.png",
-        "id": "2065",
-        "category": "Music",
-        "language": "Hindi",
-        "epgid": "SAREGAMA.MUSIC.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Saregama_Music_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Prime Media Goa",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Prime_Media.png",
-        "id": "2074",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "PRIME.MEDIA.GOA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Prime_Media_MOB/Fallback/index.m3u8"
-    },
+   
     {
         "name": "Gangaur",
         "group": "SD",
@@ -8770,26 +8576,7 @@
         "epgid": "GANGAUR.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Gangaur_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Shemaroo Umang",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Shemaroo_Umang.png",
-        "id": "2078",
-        "category": "Entertainment",
-        "language": "Hindi",
-        "epgid": "SHEMAROO.UMANG.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Shemaroo_Umang_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Bharat 24",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Bharat_24.png",
-        "id": "2079",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "BHARAT.24.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Bharat_24_MOB/Fallback/index.m3u8"
-    },
+    
     {
         "name": "TV27 News",
         "group": "SD",
@@ -8840,26 +8627,7 @@
         "epgid": "Q.GAMEX.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Q_GameX_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "U Bangla",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/U_Bangla.png",
-        "id": "2184",
-        "category": "Infotainment",
-        "language": "Bengali",
-        "epgid": "U.BANGLA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/U_Bangla_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Swatantra News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Swatantra_News.png",
-        "id": "2187",
-        "category": "News",
-        "language": "Telugu",
-        "epgid": "SWATANTRA.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Swatantra_News_MOB/Fallback/index.m3u8"
-    },
+    
     {
         "name": "Globe TV",
         "group": "SD",
@@ -8900,66 +8668,7 @@
         "epgid": "GURUVAYUR.DEVASWOM.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Guruvayur_Devaswom_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "India News Punjab",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_Punjab.png",
-        "id": "2224",
-        "category": "News",
-        "language": "Punjabi",
-        "epgid": "INDIA.NEWS.PUNJAB.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/India_News_Punjab_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "TV24",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/TV24.png",
-        "id": "2225",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "TV24.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/TV24_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Jatra Ekamra",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Jatra_Ekamra.png",
-        "id": "2227",
-        "category": "Entertainment",
-        "language": "Odia",
-        "epgid": "JATRA.EKAMRA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Jatra_Ekamra_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Samay Kolkata",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Samay_Kolkata.png",
-        "id": "2228",
-        "category": "News",
-        "language": "Bengali",
-        "epgid": "SAMAY.KOLKATA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Samay_Kolkata_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Bhojpuri Junction",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Bhojpuri_Junction.png",
-        "id": "2229",
-        "category": "Music",
-        "language": "Bhojpuri",
-        "epgid": "BHOJPURI.JUNCTION.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Bhojpuri_Junction_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "News 80",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/News80.png",
-        "id": "2233",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "NEWS.80.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/News80_MOB/Fallback/index.m3u8"
-    },
+    
     {
         "name": "Desi Music Station",
         "group": "SD",
@@ -8980,166 +8689,9 @@
         "epgid": "NAKSHATRA.DIGITAL.TV.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Nakshatra_Digital_TV_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Media9",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Media9.png",
-        "id": "2254",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "MEDIA9.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Media9_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "RRN News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/RRN_News.png",
-        "id": "2255",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "RRN.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/RRN_News_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Zee Thirai",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Thirai.png",
-        "id": "2256",
-        "category": "Movies",
-        "language": "Tamil",
-        "epgid": "ZEE.THIRAI.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Zee_Thirai_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Animax",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Animax.png",
-        "id": "2258",
-        "category": "Entertainment",
-        "language": "English",
-        "epgid": "ANIMAX.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Animax_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Divyalok TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Divyalok_TV.png",
-        "id": "2322",
-        "category": "Devotional",
-        "language": "Hindi",
-        "epgid": "DIVYALOK.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Divyalok_TV_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "TTN24",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/TTN24.png",
-        "id": "2323",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "TTN24.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/TTN24_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Punjabi Melodies",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Punjabi_Melodies.png",
-        "id": "2325",
-        "category": "Music",
-        "language": "Punjabi",
-        "epgid": "PUNJABI.MELODIES.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Punjabi_Melodies_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Firstpost",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Firstpost.png",
-        "id": "2326",
-        "category": "News",
-        "language": "English",
-        "epgid": "FIRSTPOST.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Firstpost_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "CyberPeace TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/CyberPeace_TV.png",
-        "id": "2328",
-        "category": "Educational",
-        "language": "English",
-        "epgid": "CYBERPEACE.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/CyberPeace_TV_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "SRS Bhakti TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SRS_Bhakti_TV.png",
-        "id": "2351",
-        "category": "Devotional",
-        "language": "Tamil",
-        "epgid": "SRS.BHAKTI.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/SRS_Bhakti_TV_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Narikaa",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Narikaa.png",
-        "id": "2352",
-        "category": "Educational",
-        "language": "Hindi",
-        "epgid": "NARIKAA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Narikaa_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Bharat Express",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Bharat_Express.png",
-        "id": "2353",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "BHARAT.EXPRESS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Bharat_Express_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Friends TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Friends_TV.png",
-        "id": "2354",
-        "category": "Entertainment",
-        "language": "Bengali",
-        "epgid": "FRIENDS.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Friends_TV_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "One Paschima",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/One_Paschima.png",
-        "id": "2355",
-        "category": "News",
-        "language": "Odia",
-        "epgid": "ONE.PASCHIMA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/One_Paschima_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Sadhguru Television SD",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sadhguru_Television_SD.png",
-        "id": "2388",
-        "category": "Devotional",
-        "language": "English",
-        "epgid": "SADHGURU.TELEVISION.SD.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Sadhguru_Television_SD_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Vande Bharat News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Bharat.png",
-        "id": "2423",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "VANDE.BHARAT.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Vande_Bharat_MOB/Fallback/index.m3u8"
-    },
+   
+    
+    
     {
         "name": "Sun Marathi",
         "group": "SD",
@@ -9170,96 +8722,7 @@
         "epgid": "M.NADU.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/M_Nadu_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Spondon",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Spondon.png",
-        "id": "2435",
-        "category": "Entertainment",
-        "language": "Assamese",
-        "epgid": "SPONDON.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Spondon_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Prime 9 News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Prime_9_News.png",
-        "id": "2436",
-        "category": "News",
-        "language": "Telugu",
-        "epgid": "PRIME.9.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Prime_9_News_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Wild Earth",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Wild_Earth.png",
-        "id": "2437",
-        "category": "Infotainment",
-        "language": "English",
-        "epgid": "WILD.EARTH.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Wild_Earth_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Desika daya",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Desika_daya.png",
-        "id": "2448",
-        "category": "Devotional",
-        "language": "Hindi",
-        "epgid": "DESIKA.DAYA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Desika_daya_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Jyothishavartha",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Jyothishavartha.png",
-        "id": "2686",
-        "category": "Devotional",
-        "language": "Malayalam",
-        "epgid": "JYOTHISHAVARTHA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Jyothishavartha_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "The Book Channel",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/NTBD_Channel.png",
-        "id": "2687",
-        "category": "Educational",
-        "language": "English",
-        "epgid": "THE.BOOK.CHANNEL.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/NTBD_Channel_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Vistara News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Vistara_News.png",
-        "id": "2732",
-        "category": "News",
-        "language": "Kannada",
-        "epgid": "VISTARA.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Vistara_News_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Popular TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Popular_TV.png",
-        "id": "2734",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "POPULAR.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Popular_TV_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Samachar Plus Jharkhand Bihar",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Samachar_Plus_Jh_Bihar.png",
-        "id": "2735",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "SAMACHAR.PLUS.JHARKHAND.BIHAR.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Samachar_Plus_Jh_Bihar_MOB/Fallback/index.m3u8"
-    },
+   
     {
         "name": "Zee Kannada News",
         "group": "SD",
@@ -9550,26 +9013,7 @@
         "epgid": "RED.BULL.TV.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Red_Bull_TV_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "R Bangla",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/R_Bangla.png",
-        "id": "2780",
-        "category": "News",
-        "language": "Bengali",
-        "epgid": "R.BANGLA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/R_Bangla_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "CENTA TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/CENTA_TV.png",
-        "id": "2781",
-        "category": "Educational",
-        "language": "English",
-        "epgid": "CENTA.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/CENTA_TV_MOB/Fallback/index.m3u8"
-    },
+    
     {
         "name": "ABC Australia",
         "group": "SD",
@@ -9610,26 +9054,7 @@
         "epgid": "BOOGLE.BANGLA.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Boogle_Bangla_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "Headline News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Headline_News.png",
-        "id": "2827",
-        "category": "News",
-        "language": "Gujarati",
-        "epgid": "HEADLINE.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Headline_News_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "IN24 Live",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/IN24_Live.png",
-        "id": "2851",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "IN24.LIVE.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/IN24_Live_MOB/Fallback/index.m3u8"
-    },
+    
     {
         "name": "Sports18 2",
         "group": "SD",
@@ -9680,36 +9105,7 @@
         "epgid": "MAHAA.NEWS.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Mahaa_News_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "BHI Channel",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/BHI_Channel.png",
-        "id": "2914",
-        "category": "News",
-        "language": "Bengali",
-        "epgid": "BHI.CHANNEL.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/BHI_Channel_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Daily Post PHH",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Daily_Post_PHH.png",
-        "id": "2916",
-        "category": "News",
-        "language": "Punjabi",
-        "epgid": "DAILY.POST.PHH.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Daily_Post_PHH_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Sadhna Gold",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sadhna_Gold.png",
-        "id": "2917",
-        "category": "Devotional",
-        "language": "Gujarati",
-        "epgid": "SADHNA.GOLD.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Sadhna_Gold_MOB/Fallback/index.m3u8"
-    },
+   
     {
         "name": "WPN World Punjabi News",
         "group": "SD",
@@ -9720,76 +9116,7 @@
         "epgid": "WPN.WORLD.PUNJABI.NEWS.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/WPN_World_Punjabi_News_MOB/Fallback/index.m3u8"
     },
-    {
-        "name": "99 TV",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/99TV.png",
-        "id": "2932",
-        "category": "News",
-        "language": "Telugu",
-        "epgid": "99.TV.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/99TV_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "NK TV Bangla",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/NKTV_Bangla.png",
-        "id": "2933",
-        "category": "News",
-        "language": "Bengali",
-        "epgid": "NK.TV.BANGLA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/NKTV_Bangla_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Punjabi Hits",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Punjabi_Hits.png",
-        "id": "2934",
-        "category": "Music",
-        "language": "Punjabi",
-        "epgid": "PUNJABI.HITS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Punjabi_Hits_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Pudhari News",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Pudhari_News.png",
-        "id": "2935",
-        "category": "News",
-        "language": "Marathi",
-        "epgid": "PUDHARI.NEWS.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Pudhari_News_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Oye Music",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Oye_Music.png",
-        "id": "2936",
-        "category": "Music",
-        "language": "Hindi",
-        "epgid": "OYE.MUSIC.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Oye_Music_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Update India",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Update_India.png",
-        "id": "2937",
-        "category": "News",
-        "language": "Hindi",
-        "epgid": "UPDATE.INDIA.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Update_India_MOB/Fallback/index.m3u8"
-    },
-    {
-        "name": "Haryana Buzz",
-        "group": "SD",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Haryana_Buzz.png",
-        "id": "2938",
-        "category": "Infotainment",
-        "language": "Hindi",
-        "epgid": "HARYANA.BUZZ.IN",
-        "url": "https://jio.drmlive.au/jio/bpk-tv/Haryana_Buzz_MOB/Fallback/index.m3u8"
-    },
+    
     {
         "name": "Coke Studio Tamil",
         "group": "SD",
@@ -10569,5 +9896,214 @@
         "language": "Odia",
         "epgid": "EKAMRA.MANORANJAN.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Ekamra_Manoranjan_MOB/Fallback/index.m3u8"
+    },
+    
+    {
+        "name": " SET HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SET-LOGO-HD.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SETHD&id=2011671"
+    },
+    {
+        "name": " Sony SAB HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY%20SAB%20HD_WHITE.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SABHD&id=2011749"
+    },
+    {
+        "name": " Sony PAL",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY%20PAL.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyPalSD&id=2011741"
+    },
+    {
+        "name": " Sony YAY",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY%20YAY.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyYaySD&id=2011746"
+    },
+    {
+        "name": " Sony AATH",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY%20AATH.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyAathSD&id=2011641"
+    },
+    {
+        "name": " Sony Marathi",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/Sony_MARATHI.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyMarathi&id=2011740"
+    },
+    {
+        "name": " Sony Kal",
+        "group": "SD",
+        "logo": "https://c.evidon.com/pub_logos/2796-2021122219404475.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://spt-sonykal-1-us.lg.wurl.tv/playlist.m3u8"
+    },
+    {
+        "name": " Sony BBC Earth HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SBBCE_LOGO_NEW_PNG.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyBBCEarthHD&id=2011907"
+    },
+    {
+        "name": " Sony PIX HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/PIX%20HD_WHITE.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=PIXHD&id=2011748"
+    },
+    {
+        "name": " Sony WAH",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/Sony_WAH.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyWah&id=2011906"
+    },
+    {
+        "name": " Sony MAX",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/Sony_MAX.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyMaxSD&id=2011745"
+    },
+    {
+        "name": " Sony MAX HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/Sony_MAX-HD_WHITE.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyMaxhd&id=2011670"
+    },
+    {
+        "name": " Sony MAX2",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/Sony_MAX2.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=MAX2&id=2011908"
+    },
+    {
+        "name": " Sony TEN 1",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_SD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN1SD&id=2011739"
+    },
+    {
+        "name": " Sony TEN 2",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_SD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN2SD&id=2020590"
+    },
+    {
+        "name": " Sony TEN 3",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_SD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN3SD&id=2020592"
+    },
+    {
+        "name": " Sony TEN 4",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_SD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN4SD&id=2020437"
+    },
+    {
+        "name": " Sony TEN 5",
+        "group": "SD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen5_SD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SONYSIXSD&id=2020594"
+    },
+    {
+        "name": " Sony TEN 1 HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN1HD&id=2011747"
+    },
+    {
+        "name": " Sony TEN 2 HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN2HD&id=2020434"
+    },
+    {
+        "name": " Sony TEN 3 HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN3HD&id=2020591"
+    },
+    {
+        "name": " Sony TEN 4 HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=ten4hd&id=2020589"
+    },
+    {
+        "name": " Sony TEN 5 HD",
+        "group": "HD",
+        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen5_HD_Logo_CLR.png",
+        "id": "",
+        "category": "SONYLIV",
+        "language": "All",
+        "url": "https://allinonereborn.in/sliv.m3u8?ch=SONYSIXHD&id=2020593"
     }
+   
 ]
