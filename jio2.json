@@ -9633,7 +9633,7 @@
         "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Picchar_SD.png",
         "id": "3047",
         "category": "Movies",
-        "language": "English",
+        "language": "Kannada",
         "epgid": "ZEE.PICCHAR.SD.IN",
         "url": "https://jio.drmlive.au/jio/bpk-tv/Zee_Picchar_SD_MOB/Fallback/index.m3u8"
     },
@@ -9930,8 +9930,8 @@
         "group": "SD",
         "logo": "https://sonypicturesnetworks.com/images/logos/SONY%20YAY.png",
         "id": "",
-        "category": "SONYLIV",
-        "language": "All",
+        "category": "Kids",
+        "language": "Hindi",
         "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyYaySD&id=2011746"
     },
     {
@@ -9949,7 +9949,7 @@
         "logo": "https://sonypicturesnetworks.com/images/logos/Sony_MARATHI.png",
         "id": "",
         "category": "SONYLIV",
-        "language": "All",
+        "language": "Marathi",
         "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyMarathi&id=2011740"
     },
     {
@@ -9966,8 +9966,8 @@
         "group": "HD",
         "logo": "https://sonypicturesnetworks.com/images/logos/SBBCE_LOGO_NEW_PNG.png",
         "id": "",
-        "category": "SONYLIV",
-        "language": "All",
+        "category": "Infotainment",
+        "language": "English",
         "url": "https://allinonereborn.in/sliv.m3u8?ch=SonyBBCEarthHD&id=2011907"
     },
     {
@@ -9975,8 +9975,8 @@
         "group": "HD",
         "logo": "https://sonypicturesnetworks.com/images/logos/PIX%20HD_WHITE.png",
         "id": "",
-        "category": "SONYLIV",
-        "language": "All",
+        "category": "Movies",
+        "language": "English",
         "url": "https://allinonereborn.in/sliv.m3u8?ch=PIXHD&id=2011748"
     },
     {
@@ -10016,94 +10016,50 @@
         "url": "https://allinonereborn.in/sliv.m3u8?ch=MAX2&id=2011908"
     },
     {
-        "name": " Sony TEN 1",
-        "group": "SD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_SD_Logo_CLR.png",
-        "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN1SD&id=2011739"
-    },
-    {
-        "name": " Sony TEN 2",
-        "group": "SD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_SD_Logo_CLR.png",
-        "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN2SD&id=2020590"
-    },
-    {
-        "name": " Sony TEN 3",
-        "group": "SD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_SD_Logo_CLR.png",
-        "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN3SD&id=2020592"
-    },
-    {
-        "name": " Sony TEN 4",
-        "group": "SD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_SD_Logo_CLR.png",
-        "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN4SD&id=2020437"
-    },
-    {
-        "name": " Sony TEN 5",
-        "group": "SD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen5_SD_Logo_CLR.png",
-        "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=SONYSIXSD&id=2020594"
-    },
-    {
-        "name": " Sony TEN 1 HD",
+        "name": "NAT GEO HD",
         "group": "HD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png",
+        "logo":"https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-12234-j9qoqc54-v1/imageContent-12234-j9qoqc54-m1.png",
         "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN1HD&id=2011747"
+        "category": "Infotainment",
+        "language": "English",
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=82&vtoken=&e=.m3u8"
     },
     {
-        "name": " Sony TEN 2 HD",
+        "name": "NAT GEO WILD HD",
         "group": "HD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png",
+        "logo":"https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11631-j9k0ndjc-v1/imageContent-11631-j9k0ndjc-m1.png",
         "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN2HD&id=2020434"
+        "category": "Infotainment",
+        "language": "English",
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=131&vtoken=&e=.m3u8"
     },
     {
-        "name": " Sony TEN 3 HD",
+        "name": "STAR MOVIES  HD",
         "group": "HD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png",
+        "logo": "https://i.ibb.co/QCtY1mm/Screenshot-2024-06-14-173632.png",
         "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=TEN3HD&id=2020591"
+        "category": "Movies",
+        "language": "English",
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=1485&vtoken=&e=.m3u8"
     },
     {
-        "name": " Sony TEN 4 HD",
+        "name": "Movies Now HD",
         "group": "HD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png",
+        "logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-12095-j9ooixfs-v1/imageContent-12095-j9ooixfs-m1.png",
         "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=ten4hd&id=2020589"
+        "category": "Movies",
+        "language": "English",
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=1479&vtoken=&e=.m3u8"
     },
     {
-        "name": " Sony TEN 5 HD",
+        "name": "MNX HD",
         "group": "HD",
-        "logo": "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen5_HD_Logo_CLR.png",
+        "logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-12216-j9qm5hjs-v2/imageContent-12216-j9qm5hjs-m2.png",
         "id": "",
-        "category": "SONYLIV",
-        "language": "All",
-        "url": "https://allinonereborn.in/sliv.m3u8?ch=SONYSIXHD&id=2020593"
+        "category": "Movies",
+        "language": "English",
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=1480&vtoken=&e=.m3u8"
     }
+   
    
 ]
