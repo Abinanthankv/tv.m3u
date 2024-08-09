@@ -10021,7 +10021,16 @@
         "id": "",
         "category": "Movies",
         "language": "English",
-        "url": "https://allinonereborn.com/livetv-web/live.php?id=1485&vtoken=&e=.m3u8"
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=2714&vtoken=&e=.m3u8"
+    },
+    {
+        "name": "STAR MOVIES SELECT  HD",
+        "group": "HD",
+        "logo": "https://en.wikipedia-on-ipfs.org/I/StarMoviesSelectHDLogo.jpg.webp",
+        "id": "",
+        "category": "Movies",
+        "language": "English",
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=2719&vtoken=&e=.m3u8"
     },
     {
         "name": "Movies Now HD",
@@ -10030,7 +10039,7 @@
         "id": "",
         "category": "Movies",
         "language": "English",
-        "url": "https://allinonereborn.com/livetv-web/live.php?id=1479&vtoken=&e=.m3u8"
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=2702&vtoken=&e=.m3u8"
     },
     {
         "name": "MNX HD",
@@ -10039,7 +10048,7 @@
         "id": "",
         "category": "Movies",
         "language": "English",
-        "url": "https://allinonereborn.com/livetv-web/live.php?id=1480&vtoken=&e=.m3u8"
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=2697&vtoken=&e=.m3u8"
     },
     {
         "name": "HBO FAMILY HD",
@@ -10048,11 +10057,21 @@
         "id": "",
         "category": "Movies",
         "language": "English",
-        "url": "https://allinonereborn.com/livetv-web/live.php?id=13561&vtoken=&e=.m3u8"
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=2693&vtoken=&e=.m3u8"
+    },
+    {
+        "name": "STAR VIJAY HD",
+        "group": "HD",
+        "logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11909-j9l52epk-v2/imageContent-11909-j9l52epk-m4.png",
+        "id": "",
+        "category": "Entertainment",
+        "language": "Tamil",
+        "url": "https://allinonereborn.com/livetv-web/live.php?id=8018&vtoken=&e=.m3u8"
     }
+
    
   
-    
+
    
    
 ]
