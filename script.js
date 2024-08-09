@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (item.id != "") {
          player.src({
-       src:`https://blah-engineers-lady-rpg.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
+      src:`https://blah-engineers-lady-rpg.trycloudflare.com/app/live.php?id=${item.id}&e=.m3u`,
        //type: 'application/x-mpegURL',
         type: 'application/vnd.apple.mpegURL'
          });
